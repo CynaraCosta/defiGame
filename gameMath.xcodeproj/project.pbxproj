@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85A928F4449A00F9238E /* SelectGameView.swift */; };
+		93FD85B128F45C7400F9238E /* TutorialUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85B028F45C7400F9238E /* TutorialUIView.swift */; };
+		93FD85B328F4653800F9238E /* CARD VAZIO.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FD85B228F4653800F9238E /* CARD VAZIO.png */; };
 		A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1628EF922600DA2DA0 /* gameMathApp.swift */; };
 		A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1828EF922600DA2DA0 /* ContentView.swift */; };
 		A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4378D1A28EF922900DA2DA0 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
+		93FD85B028F45C7400F9238E /* TutorialUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialUIView.swift; sourceTree = "<group>"; };
+		93FD85B228F4653800F9238E /* CARD VAZIO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CARD VAZIO.png"; sourceTree = "<group>"; };
 		A4378D1328EF922600DA2DA0 /* Défi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
 		A4378D1828EF922600DA2DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,9 +58,11 @@
 			isa = PBXGroup;
 			children = (
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
+				93FD85B028F45C7400F9238E /* TutorialUIView.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4378D1A28EF922900DA2DA0 /* Assets.xcassets */,
+				93FD85B228F4653800F9238E /* CARD VAZIO.png */,
 				A4378D1C28EF922900DA2DA0 /* Preview Content */,
 			);
 			path = gameMath;
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FD85B328F4653800F9238E /* CARD VAZIO.png in Resources */,
 				A4378D1E28EF922900DA2DA0 /* Preview Assets.xcassets in Resources */,
 				A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */,
 			);
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FD85B128F45C7400F9238E /* TutorialUIView.swift in Sources */,
 				93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
