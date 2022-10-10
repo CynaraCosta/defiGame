@@ -8,42 +8,83 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init(){
+        let nav = UINavigationBar.appearance()
+        nav.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
     var body: some View {
         
-        
-        ZStack {
-            BackgroundView()
+        NavigationView {
+            ZStack {
+                BackgroundView()
+                
+                VStack (spacing: 132) {
+                    
+                    VStack(spacing: 136) {
+                        Text("Logo Défi")
+                            .fixedSize(horizontal: false, vertical: true)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .frame(width: UIScreen.main.bounds.width * 0.7375, height: 107)
+                            // a altura vai alterar quando for feita a logo
+                            .background(Rectangle().fill(Color.white).shadow(radius: 3))
 
-            VStack(spacing: 111) {
-                Text("Logo Défi")
-                    .fixedSize(horizontal: false, vertical: true)
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .frame(width: 240, height: 107)
-                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                        VStack (spacing: 40) {
+                            Button {
+                                
+                            } label: {
+                                Text("Solo")
+                                    .foregroundColor(.black)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    
 
-                VStack (spacing: 24) {
-                    Text("Solo")
-                        .fixedSize(horizontal: false, vertical: true)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .frame(width: 240, height: 40)
-                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                            }
+                            .frame(width: UIScreen.main.bounds.width * 0.7375, height: UIScreen.main.bounds.height * 0.07, alignment: .center)
+                                .background(Color.white)
+                                .cornerRadius(8)
 
-                    Text("Disputa")
-                        .fixedSize(horizontal: false, vertical: true)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .frame(width: 240, height: 40)
-                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                            Button {
+                                
+                            } label: {
+                                Text("Disputa")
+                                    .foregroundColor(.black)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    
 
+                            }
+                            .frame(width: UIScreen.main.bounds.width * 0.7375, height: UIScreen.main.bounds.height * 0.07, alignment: .center)
+                                .background(Color.white)
+                                .cornerRadius(8)
+                        
+                        }
+                        
+                        
 
+                    }
+                    
+                    NavigationLink(destination: CreditsView()) {
+                        Text("Créditos")
+                            .foregroundColor(Color.white)
+                            .underline()
+                    }.navigationBarTitle("")
+                        .navigationBarHidden(true)
+                        
+                        
+                    
                 }
 
+                
 
             }
-
-        }
+        }.accentColor(.white)
+        
+        
 
         
     }
@@ -52,17 +93,18 @@ struct ContentView: View {
 struct BackgroundView: View {
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color("Ocean"), Color("Aqua")]),
+        LinearGradient(gradient: Gradient(colors: [Color("Blue800"), Color("Aqua800")]),
                        startPoint: .bottomTrailing,
                        endPoint: .topLeading)
             .edgesIgnoringSafeArea(.all)
+
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
         }
     }
