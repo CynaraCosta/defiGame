@@ -15,7 +15,7 @@ struct ContentView: View {
             BackgroundView()
 
             VStack(spacing: 111) {
-                Text("Logo Défi")
+                Text("Logo Défi!")
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)
                     .padding()
