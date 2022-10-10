@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ButtonUIView: View {
-   
+    
     let button : String
     
     init(button: String) {
         self.button = button
     }
     
-
+    
     var body: some View {
         Button {
             
@@ -27,19 +27,13 @@ struct ButtonUIView: View {
                 .frame(height: 40)
                 .border(.white)
                 .background(.white)
-               // .cornerRadius()
-                
+            // .cornerRadius()
+            
         }
         .buttonStyle(DefaultButtonStyle())
-
+        
     }
 }
-
-
-
-
-
-
 
 
 

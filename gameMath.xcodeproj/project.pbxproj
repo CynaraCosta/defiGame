@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93FD85AC28F448F900F9238E /* SelectGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85AB28F448F900F9238E /* SelectGameUIView.swift */; };
-		93FD85AE28F44C7A00F9238E /* ButtonUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85AD28F44C7A00F9238E /* ButtonUIView.swift */; };
+		93FD85AE28F44C7A00F9238E /* ButtonUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85AD28F44C7A00F9238E /* ButtonUIViewModel.swift */; };
 		A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1628EF922600DA2DA0 /* gameMathApp.swift */; };
 		A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1828EF922600DA2DA0 /* ContentView.swift */; };
 		A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4378D1A28EF922900DA2DA0 /* Assets.xcassets */; };
@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		93FD85AB28F448F900F9238E /* SelectGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameUIView.swift; sourceTree = "<group>"; };
-		93FD85AD28F44C7A00F9238E /* ButtonUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUIView.swift; sourceTree = "<group>"; };
+		93FD85AD28F44C7A00F9238E /* ButtonUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUIViewModel.swift; sourceTree = "<group>"; };
 		A4378D1328EF922600DA2DA0 /* Défi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
 		A4378D1828EF922600DA2DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93FD85AF28F45A2600F9238E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93FD85AD28F44C7A00F9238E /* ButtonUIViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A4378D0A28EF922600DA2DA0 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +63,8 @@
 		A4378D1528EF922600DA2DA0 /* gameMath */ = {
 			isa = PBXGroup;
 			children = (
+				93FD85AF28F45A2600F9238E /* Models */,
 				93FD85AB28F448F900F9238E /* SelectGameUIView.swift */,
-				93FD85AD28F44C7A00F9238E /* ButtonUIView.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4378D1A28EF922900DA2DA0 /* Assets.xcassets */,
@@ -145,7 +153,7 @@
 			files = (
 				93FD85AC28F448F900F9238E /* SelectGameUIView.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
-				93FD85AE28F44C7A00F9238E /* ButtonUIView.swift in Sources */,
+				93FD85AE28F44C7A00F9238E /* ButtonUIViewModel.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
