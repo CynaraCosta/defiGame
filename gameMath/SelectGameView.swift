@@ -10,6 +10,11 @@ import SwiftUI
 struct SelectGameView: View {
     
     @State private var index = 0
+    @State private var titleGames = ["Conta ai!", "O maioral!", "Cadê o número?", "Genius"]
+    @State private var descGames = ["Resolver expressões matemáticas dentro do tempo determinado.",
+                                    "Selecionar o maior número disposta na tela.",
+                                    "Selecionar o número baseado na escrita desse número na tela.",
+                                    "Selecionar as cores em seus locais corretos de aparecimento, que irá aumentar a dificuldade conforme as rodadas forem passando."]
     
     var body: some View {
         ZStack {
@@ -17,13 +22,28 @@ struct SelectGameView: View {
             
             VStack {
                 
-                TabView(selection: $index) {
-                    ForEach(0..<4) { index in
-                        CardView()
+//                TabView(selection: $index) {
+//                    ForEach(0..<4) { index in
+//                        CardView()
+//                    }
+//                }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 16) {
+                        ForEach(1..<5) { i in
+                            
+                            VStack (spacing: 8){
+                                CardView()
+                            }
+                            
+                        }
                     }
-                }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                }.padding()
+                    
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65, alignment: .center)
+                
             
         }
     }
@@ -54,6 +74,7 @@ struct CardView: View {
                     Text("Ache o resultado da expressão!")
                         .font(.caption)
                 }.frame(width: UIScreen.main.bounds.width * 0.52, height: UIScreen.main.bounds.height * 0.09, alignment: .leading)
+                
                 
             }
             
