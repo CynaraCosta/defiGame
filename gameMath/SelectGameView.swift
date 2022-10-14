@@ -10,11 +10,6 @@ import SwiftUI
 struct SelectGameView: View {
     
     @State private var index = 0
-    @State private var titleGames = ["Conta ai!", "O maioral!", "Cadê o número?", "Genius"]
-    @State private var descGames = ["Resolver expressões matemáticas dentro do tempo determinado.",
-                                    "Selecionar o maior número disposta na tela.",
-                                    "Selecionar o número baseado na escrita desse número na tela.",
-                                    "Selecionar as cores em seus locais corretos de aparecimento, que irá aumentar a dificuldade conforme as rodadas forem passando."]
     
     var body: some View {
         ZStack {
@@ -31,10 +26,10 @@ struct SelectGameView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 16) {
-                        ForEach(1..<5) { i in
+                        ForEach(games) { i in
                             
                             VStack (spacing: 8){
-                                CardView()
+                                CardView(title: i.title, description: i.description)
                             }
                             
                         }
@@ -51,6 +46,10 @@ struct SelectGameView: View {
 
 
 struct CardView: View {
+    
+    var title: String
+    var description: String
+    
     var body: some View {
         
         ZStack {
@@ -60,7 +59,7 @@ struct CardView: View {
                 .cornerRadius(8)
             
             
-            VStack (alignment: .center, spacing: -8) {
+            VStack (alignment: .center) {
                 Rectangle()
                     .fill(Color.gray)
                     .cornerRadius(8)
@@ -68,10 +67,10 @@ struct CardView: View {
                     
                 
                 VStack (alignment: .leading, spacing: 4){
-                    Text("Conta ai!")
+                    Text(title)
                         .bold()
                     
-                    Text("Ache o resultado da expressão!")
+                    Text(description)
                         .font(.caption)
                 }.frame(width: UIScreen.main.bounds.width * 0.52, height: UIScreen.main.bounds.height * 0.09, alignment: .leading)
                 
