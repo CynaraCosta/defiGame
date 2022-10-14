@@ -12,8 +12,10 @@ struct TutorialUIView: View {
         ZStack {
             BackgroundViewTutorial()
             
-            ZStack {
-                let image = Image("cardvazio")
+            VStack(spacing: 111) {
+                //let image =
+                Image("cardvazio")
+                
                 
                 VStack(spacing: 32) {
                     Text("Como Jogar?").font(.body)
