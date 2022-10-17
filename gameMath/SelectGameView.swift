@@ -35,6 +35,7 @@ struct SelectGameView: View {
                         }
                     }
                 }.padding()
+                    .offset(x: 0, y: -40)
                     
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65, alignment: .center)
