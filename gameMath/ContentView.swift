@@ -8,42 +8,56 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init(){
+            let nav = UINavigationBar.appearance()
+            nav.titleTextAttributes = [.foregroundColor: UIColor.white]
+        }
+    
     var body: some View {
         
-        
-        ZStack {
-            BackgroundView()
+        NavigationView {
+            ZStack {
+                BackgroundView()
 
-            VStack(spacing: 111) {
-                Text("Logo Défi!")
-                    .fixedSize(horizontal: false, vertical: true)
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .frame(width: 240, height: 107)
-                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
-
-                VStack (spacing: 24) {
-                    Text("Solo")
+                VStack(spacing: 111) {
+                    Text("Logo Défi")
                         .fixedSize(horizontal: false, vertical: true)
                         .multilineTextAlignment(.center)
                         .padding()
-                        .frame(width: 240, height: 40)
+                        .frame(width: 240, height: 107)
                         .background(Rectangle().fill(Color.white).shadow(radius: 3))
 
-                    Text("Disputa")
-                        .fixedSize(horizontal: false, vertical: true)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .frame(width: 240, height: 40)
-                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                    VStack (spacing: 24) {
+                        NavigationLink(destination: SelectGameView()){
+                            Text("Solo")
+                                .foregroundColor(Color.black)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .frame(width: 240, height: 40)
+                                .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                        }
 
-
+                        NavigationLink(destination: SelectGameView()){
+                            Text("Disputa")
+                                .fixedSize(horizontal: false, vertical: true)
+                                .foregroundColor(Color.black)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .frame(width: 240, height: 40)
+                                .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                        }.navigationBarTitle("")
+                            .navigationBarHidden(true)
+                        
+                        
+                    }
                 }
-
-
             }
-
-        }
+        }.accentColor(Color.white)
+        
+        
+        
 
         
     }
@@ -62,7 +76,6 @@ struct BackgroundView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
         }
     }
