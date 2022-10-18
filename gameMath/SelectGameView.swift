@@ -39,7 +39,7 @@ struct SelectGameView: View {
                         ForEach(gamesViewModel.games) { game in
                             
                             NavigationLink(destination: DestinationView(game: game.title)){
-                                CardView(title: game.title, description: game.description)
+                                CardView(title: game.title, description: game.description, image: game.image)
                                 
                             }
                             .foregroundColor(.black)
@@ -63,21 +63,28 @@ struct CardView: View {
     
     var title: String
     var description: String
+    var image: String
     
     var body: some View {
         
         ZStack {
             Rectangle()
                 .fill(Color.white)
-                .frame(width: UIScreen.main.bounds.width * 0.61, height: UIScreen.main.bounds.height * 0.50, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width * 0.61, height: UIScreen.main.bounds.height * 0.45, alignment: .center)
                 .cornerRadius(8)
             
             
             VStack (alignment: .center) {
-                Rectangle()
-                    .fill(Color.gray)
-                    .cornerRadius(8)
+                
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
                     .frame(width: UIScreen.main.bounds.width * 0.52, height: UIScreen.main.bounds.height * 0.33, alignment: .center)
+                
+//                Rectangle()
+//                    .fill(Color.gray)
+//                    .cornerRadius(8)
+//                    .frame(width: UIScreen.main.bounds.width * 0.52, height: UIScreen.main.bounds.height * 0.33, alignment: .center)
                 
                 
                 VStack (alignment: .leading, spacing: 4){
