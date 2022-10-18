@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DestinationView: View {
-    @Binding var isPresenting: Bool
+//    @Binding var isPresenting: Bool
     
     var game: String
     
@@ -25,58 +25,33 @@ struct DestinationView: View {
 
 struct SelectGameView: View {
     
-    @State private var index = 0
-    
     @ObservedObject var gamesViewModel: GamesViewModel = .init()
     
     @State var isItemViewPresenting: Bool = false
-    //    @StateObject var selectedItem: Game
     
     var body: some View {
         ZStack {
             BackgroundViewSelectGameView()
             
             VStack {
-                
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .top, spacing: 16) {
+                    HStack(alignment: .top, spacing: 20) {
                         ForEach(gamesViewModel.games) { game in
                             
-                            NavigationLink(isActive:  $isItemViewPresenting,
-                                           destination: { DestinationView(isPresenting: $isItemViewPresenting, game: game.title) })
-                            VStack (spacing: 8){
+                            NavigationLink(destination: DestinationView(game: game.title)){
                                 CardView(title: game.title, description: game.description)
+                                
                             }
                             .foregroundColor(.black)
                             .multilineTextAlignment(.leading)
                             
-                            
-                            //                            Button {
-                            //                                selectedItem = game
-                            //                                isItemViewPresenting = true
-                            //
-                            //                            } label: {
-                            //                                VStack (spacing: 8){
-                            //                                    CardView(title: game.title, description: game.description)
-                            //                                }
-                            //                                .foregroundColor(.black)
-                            //                                .multilineTextAlignment(.leading)
-                            //                            }
-                            //
-                            //                        }.background(
-                            //                            NavigationLink(destination: DestinationView(isPresenting: $isItemViewPresenting, game: selectedItem.title)) {EmptyView()}
-                            //                        )
                         }
-                    }.padding()
-                        .offset(x: 0, y: -40)
-                    
-                    
-                    
-                }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65, alignment: .center)
-                
-                
+                    }
+                    .padding(.horizontal)
+                }
             }
         }
+        
     }
 }
 
