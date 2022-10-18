@@ -13,6 +13,7 @@
 		A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4378D1A28EF922900DA2DA0 /* Assets.xcassets */; };
 		A4378D1E28EF922900DA2DA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4378D1D28EF922900DA2DA0 /* Preview Assets.xcassets */; };
 		A465ACF728F9984800517FCD /* ModelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465ACF628F9984800517FCD /* ModelGame.swift */; };
+		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A4378D1A28EF922900DA2DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4378D1D28EF922900DA2DA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A465ACF628F9984800517FCD /* ModelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGame.swift; sourceTree = "<group>"; };
+		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
+				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
 				A4378D1A28EF922900DA2DA0 /* Assets.xcassets */,
 				A4378D1C28EF922900DA2DA0 /* Preview Content */,
 			);
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */,
+				A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
