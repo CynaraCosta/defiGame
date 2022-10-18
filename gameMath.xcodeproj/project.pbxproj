@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870AF28FECB77003618FF /* WheresTheNumberView.swift */; };
 		93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85A928F4449A00F9238E /* SelectGameView.swift */; };
 		A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1628EF922600DA2DA0 /* gameMathApp.swift */; };
 		A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1828EF922600DA2DA0 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
 		A4378D1328EF922600DA2DA0 /* Défi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				A465ACF528F9983500517FCD /* Models */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
+				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4378D1A28EF922900DA2DA0 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
+				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
