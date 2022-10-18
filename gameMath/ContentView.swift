@@ -66,7 +66,7 @@ struct ContentView: View {
 struct BackgroundView: View {
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color("Ocean"), Color("Aqua")]),
+        LinearGradient(gradient: Gradient(colors: [Color("Purple800"), Color("Blue800")]),
                        startPoint: .bottomTrailing,
                        endPoint: .topLeading)
             .edgesIgnoringSafeArea(.all)

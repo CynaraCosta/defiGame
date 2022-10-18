@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DestinationView: View {
-//    @Binding var isPresenting: Bool
+    //    @Binding var isPresenting: Bool
     
     var game: String
     
@@ -47,14 +47,14 @@ struct SelectGameView: View {
                             
                         }
                     }
-                    .padding(.horizontal)
-                        .offset(x: 0, y: -40)
-                    
+                }
+                .padding(.horizontal)
+                    .offset(x: 0, y: -40)
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65, alignment: .center)
 
+            
         }
-        
     }
 }
 
@@ -83,9 +83,12 @@ struct CardView: View {
                 VStack (alignment: .leading, spacing: 4){
                     Text(title)
                         .bold()
+                        .multilineTextAlignment(.leading)
                     
                     Text(description)
                         .font(.caption)
+                        .multilineTextAlignment(.leading)
+                    
                 }.frame(width: UIScreen.main.bounds.width * 0.52, height: UIScreen.main.bounds.height * 0.09, alignment: .leading)
                 
                 
@@ -100,7 +103,7 @@ struct CardView: View {
 struct BackgroundViewSelectGameView: View {
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color("Ocean"), Color("Aqua")]),
+        LinearGradient(gradient: Gradient(colors: [Color("Purple800"), Color("Blue800")]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
         .edgesIgnoringSafeArea(.all)
