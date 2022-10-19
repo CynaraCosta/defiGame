@@ -95,7 +95,12 @@ struct MaioraisVIew: View {
 }
 
 func generateNumbers() -> [Int] {
-    return (1..<10).map{_ in Int.random(in: 1 ... 99)}
+    var set = Set<Int>()
+    while set.count < 9 {
+        set.insert(Int.random(in: 1...99))
+    }
+//    return (1..<10).map{_ in Int.random(in: 1 ... 99)}
+    return Array(set)
 }
 
 struct MaioraisBackgroundView: View {
