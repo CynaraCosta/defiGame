@@ -109,7 +109,7 @@ struct CardView: View {
 
 @ViewBuilder func getGameView(game: Game) -> some View {
     switch game.id {
-    case 0: MaioraisVIew()
+    case 0: WheresTheNumberView()
     case 1: MaioraisVIew()
     case 2: MaioraisVIew()
     case 3: MaioraisVIew()
