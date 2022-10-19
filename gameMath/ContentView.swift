@@ -13,7 +13,7 @@ struct ContentView: View {
             let nav = UINavigationBar.appearance()
             nav.titleTextAttributes = [.foregroundColor: UIColor.white]
         }
-    
+        //
     var body: some View {
         
         NavigationView {
