@@ -61,6 +61,7 @@ struct MaioraisVIew: View {
                         Button {
                             if number == answer {
                                 points += 10
+                                HapticManager.instance.notification(type: .success)
                                 data = generateNumbers()
                                 
                             } else {
