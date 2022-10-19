@@ -38,7 +38,7 @@ struct SelectGameView: View {
                     HStack(alignment: .top, spacing: 20) {
                         ForEach(gamesViewModel.games) { game in
                             
-                            NavigationLink(destination: game.viewGame){
+                            NavigationLink(destination: getGameView(game: game)){
                                 CardView(title: game.title, description: game.description, image: game.image)
                                 
                             }
@@ -107,12 +107,15 @@ struct CardView: View {
     }
 }
 
-//private func getTheDestination(data: Game) -> some View {
-//    if data.viewGame == data {
-//        return Text( _ data.data)
-//    }
-//           return Text("Destination")
-//        }
+@ViewBuilder func getGameView(game: Game) -> some View {
+    switch game.id {
+    case 0: MaioraisVIew()
+    case 1: MaioraisVIew()
+    case 2: MaioraisVIew()
+    case 3: MaioraisVIew()
+    default: EmptyView()
+    }
+}
 
 struct BackgroundViewSelectGameView: View {
     
