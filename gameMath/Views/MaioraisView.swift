@@ -10,7 +10,7 @@ import SwiftUI
 struct MaioraisVIew: View {
     
     @State var timerRunning = false
-    @State var countDownTimer = 5
+    @State var countDownTimer = 40
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 40.0
     @State private var textGame: String = "Selecionar o maior número disposta na tela."
