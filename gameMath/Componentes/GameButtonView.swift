@@ -1,5 +1,5 @@
 //
-//  NumberCorrectView.swift
+//  GameButtonView.swift
 //  gameMath
 //
 //  Created by Danielly Santos Lopes da Silva on 20/10/22.
@@ -7,18 +7,21 @@
 
 import SwiftUI
 
-struct NumberCorrectView: View {
-    let textButton: String;
-    let toGuess: Bool = false;
-    let buttonColor: Color;
-    let textColor: Color;
+struct GameButtonView: View {
+    let textButton: String
+    //let buttonActive: Bool
+    let buttonColor: Color
+    let textColor: Color
     
-    init(textButton: String, buttonColor: Color, textColor: Color) {
+    
+    init(textButton: String,
+         buttonColor: Color,
+         textColor: Color) {
         self.textButton = textButton
         self.buttonColor = buttonColor
         self.textColor = textColor
+       // self.buttonActive;: Bool = false,
     }
-    
     
     
     var body: some View {
@@ -28,7 +31,7 @@ struct NumberCorrectView: View {
             }, label: {Text(self.textButton.uppercased()).bold()
                     .padding(0)
                     .font(.system(size: 20, weight: .bold))
-                    .frame(width: 267, height: 40 , alignment: .center)
+                    .frame(width: 78, height: 63 , alignment: .center)
                     .background(self.buttonColor)
                     .clipShape(RoundedRectangle(cornerRadius: 4))
                     .multilineTextAlignment(.center)
@@ -37,11 +40,10 @@ struct NumberCorrectView: View {
         }
     }
     
-    
-    
-    struct NumberCorrectView_Previews: PreviewProvider {
-        static var previews: some View {
-            NumberCorrectView(textButton: "Doze", buttonColor: .cyan, textColor: .black)
-        }
+    }
+
+struct GameButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        GameButtonView(textButton: "12", buttonColor: .cyan, textColor: .black)
     }
 }
