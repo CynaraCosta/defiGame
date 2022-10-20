@@ -10,7 +10,6 @@ import SwiftUI
 struct MaioraisVIew: View {
     
     @State var timerRunning = false
-    @State var countDownTimer = 40
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 40.0
     @State private var textGame: String = "Selecionar o maior número disposta na tela."
@@ -30,32 +29,32 @@ struct MaioraisVIew: View {
     ]
     
     @State private var points = 0
-    @State private var textPoints = ""
+    
+    let timerTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var time: Int = 40
     
     var body: some View {
         
-        if countDownTimer != 0 {
+        if time != 0 {
             ZStack {
                 MaioraisBackgroundView()
                 
-                VStack (spacing: UIScreen.main.bounds.height * 0.1) {
+                VStack (spacing: UIScreen.main.bounds.height * 0.06) {
                     
-                    HStack (spacing: UIScreen.main.bounds.width * 0.4){
+                    HStack {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.white)
+                        Circle()
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 40, weight: .semibold))
+                            .fill(.black)
+                            .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
                         
-                        HStack {
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.white)
-                            Text("\(points)")
-                                .foregroundColor(.white)
-                                .font(.system(size: 22, weight: .semibold))
-                        }
-                        
-                        HStack {
-                            Image(systemName: "clock")
-                                .foregroundColor(.white)
-                            TimeView(countDownTimer: $countDownTimer, timerRunning: $timerRunning)
-                        }
+                            .modifier(AnimatingNumberOverlay(number: CGFloat(points)))
                     }
+                    
+                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .green : ((time > 5) ? .yellow : .red))
+                        .animation(.spring())
                     
                     Text("Encontre o maior número!")
                         .font(.system(size: 22, weight: .semibold))
@@ -65,7 +64,9 @@ struct MaioraisVIew: View {
                         ForEach(data, id: \.self) { number in
                             Button {
                                 if number == answer {
-                                    points += 10
+                                    withAnimation {
+                                        points += 10
+                                    }
                                     playSound(sound: "yeah")
                                     data = generateNumbers()
                                     
@@ -94,6 +95,16 @@ struct MaioraisVIew: View {
                 InitPopUp(show: $initPopUp, blur: $blurAmount, timerRun: $timerRunning, textGame: $textGame)
                 
             }
+            
+            .onReceive(timerTimer) { _ in
+                if time > 0 && timerRunning {
+                    time -= 1
+                } else {
+                    timerRunning = false
+                }
+            }
+            
+            
         } else {
             
             withAnimation {
@@ -114,6 +125,27 @@ func generateNumbers() -> [Int] {
 //    return (1..<10).map{_ in Int.random(in: 1 ... 99)}
     // [1, 45, 67, 34, 98, 6, 78, 65, 23]
     return Array(set)
+}
+
+struct AnimatingNumberOverlay: AnimatableModifier {
+    
+    var number: CGFloat
+    var animatableData: CGFloat {
+        get {
+            number
+        }
+        
+        set {
+            number = newValue
+        }
+        
+    }
+    
+    func body(content: Content) -> some View {
+        return content.overlay(Text("\(Int(number))").foregroundColor(.white)
+            .font(.system(size: 40, weight: .semibold)))
+    }
+    
 }
 
 struct MaioraisBackgroundView: View {
