@@ -57,17 +57,14 @@ struct ContentView: View {
                                 .cornerRadius(50)
                         }.navigationBarTitle("")
                             .navigationBarHidden(true)
+                            .navigationBarBackButtonHidden(true)
                         
                         
                     }
                 }
             }
         }.accentColor(Color.white)
-        
-        
-        
-
-        
+ 
     }
 }
 

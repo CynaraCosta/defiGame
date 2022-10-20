@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FinishSoloView: View {
     
+    @Binding var points: Int
     
     var body: some View {
         
@@ -35,14 +36,15 @@ struct FinishSoloView: View {
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width * 0.18, height: UIScreen.main.bounds.height * 0.06)
                         
-                        Text("30 pontos!")
+                        Text("\(points) pontos!")
                             .font(.system(size: 42, weight: .bold))
                             .foregroundColor(.white)
                     }
                 }
                 
                 VStack (spacing: 24) {
-                    NavigationLink(destination: MaioraisVIew()){
+                    
+                    NavigationLink(destination: MaioraisVIew().navigationBarBackButtonHidden(true)){
                         Text("Jogar Novamente")
                             .foregroundColor(Color.black)
                             .fixedSize(horizontal: false, vertical: true)
@@ -54,7 +56,7 @@ struct FinishSoloView: View {
                             .font(.system(size: 20, weight: .semibold))
                     }
 
-                    NavigationLink(destination: ContentView()){
+                    NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
                         Text("Voltar ao menu")
                             .fixedSize(horizontal: false, vertical: true)
                             .foregroundColor(Color.black)
@@ -64,10 +66,33 @@ struct FinishSoloView: View {
                             .background(Rectangle().fill(Color.white).shadow(radius: 3))
                             .cornerRadius(50)
                             .font(.system(size: 20, weight: .semibold))
-                        
+
                     }.navigationBarTitle("")
                         .navigationBarHidden(true)
+                        
                     
+                    
+                    
+//                    Text("Jogar Novamente")
+//                        .foregroundColor(Color.black)
+//                        .fixedSize(horizontal: false, vertical: true)
+//                        .multilineTextAlignment(.center)
+//                        .padding()
+//                        .frame(width: UIScreen.main.bounds.width * 0.775, height: UIScreen.main.bounds.height * 0.06)
+//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+//                        .cornerRadius(50)
+//                        .font(.system(size: 20, weight: .semibold))
+//
+//
+//                    Text("Voltar ao menu")
+//                        .fixedSize(horizontal: false, vertical: true)
+//                        .foregroundColor(Color.black)
+//                        .multilineTextAlignment(.center)
+//                        .padding()
+//                        .frame(width: UIScreen.main.bounds.width * 0.775, height: UIScreen.main.bounds.height * 0.06)
+//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+//                        .cornerRadius(50)
+//                        .font(.system(size: 20, weight: .semibold))
                     
                 }
             
@@ -80,10 +105,10 @@ struct FinishSoloView: View {
     }
 }
 
-struct FinishSoloView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            FinishSoloView()
-        }
-    }
-}
+//struct FinishSoloView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            FinishSoloView(points: $points)
+//        }
+//    }
+//}
