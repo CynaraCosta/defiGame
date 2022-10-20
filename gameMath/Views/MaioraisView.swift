@@ -10,7 +10,7 @@ import SwiftUI
 struct MaioraisVIew: View {
     
     @State var timerRunning = false
-    @State var countDownTimer = 40
+    @State var countDownTimer = 5
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 40.0
     @State private var textGame: String = "Selecionar o maior número disposta na tela."
@@ -96,7 +96,7 @@ struct MaioraisVIew: View {
         } else {
             
             withAnimation {
-                FinishSoloView()
+                FinishSoloView(points: $points)
             }
             
         }
@@ -111,6 +111,7 @@ func generateNumbers() -> [Int] {
         set.insert(Int.random(in: 1...99))
     }
 //    return (1..<10).map{_ in Int.random(in: 1 ... 99)}
+    // [1, 45, 67, 34, 98, 6, 78, 65, 23]
     return Array(set)
 }
 
