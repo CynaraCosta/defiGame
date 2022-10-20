@@ -57,7 +57,7 @@ struct MaioraisVIew: View {
                         }
                     }
                     
-                    Text("Encontre o maior número! \(answer)")
+                    Text("Encontre o maior número!")
                         .font(.system(size: 22, weight: .semibold))
                         .foregroundColor(.white)
                     
@@ -66,10 +66,11 @@ struct MaioraisVIew: View {
                             Button {
                                 if number == answer {
                                     points += 10
-                                    HapticManager.instance.notification(type: .success)
+                                    playSound(sound: "yeah")
                                     data = generateNumbers()
                                     
                                 } else {
+                                    HapticManager.instance.notification(type: .error)
                                     data = generateNumbers()
                                     
                                 }
