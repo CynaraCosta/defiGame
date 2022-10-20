@@ -16,6 +16,10 @@
 		A4378D1E28EF922900DA2DA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4378D1D28EF922900DA2DA0 /* Preview Assets.xcassets */; };
 		A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A0D76290041AB0043D00A /* HapitcsModel.swift */; };
 		A465ACF728F9984800517FCD /* ModelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465ACF628F9984800517FCD /* ModelGame.swift */; };
+		A4AC04BF290092B700510EDA /* Sacramento-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4AC04BE290092B700510EDA /* Sacramento-Regular.ttf */; };
+		A4AC04C22900939700510EDA /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C12900939700510EDA /* FontsManager.swift */; };
+		A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C32900D2E000510EDA /* InitPopUpView.swift */; };
+		A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C52900D9B900510EDA /* FinishSoloView.swift */; };
 		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
 		A4EB4AA228FED542002EB67D /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4AA128FED542002EB67D /* TimeView.swift */; };
 /* End PBXBuildFile section */
@@ -24,13 +28,18 @@
 		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		939870B128FECEE2003618FF /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
-		A4378D1328EF922600DA2DA0 /* Défi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4378D1328EF922600DA2DA0 /* Défis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
 		A4378D1828EF922600DA2DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4378D1A28EF922900DA2DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4378D1D28EF922900DA2DA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A45A0D76290041AB0043D00A /* HapitcsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapitcsModel.swift; sourceTree = "<group>"; };
 		A465ACF628F9984800517FCD /* ModelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGame.swift; sourceTree = "<group>"; };
+		A4AC04BE290092B700510EDA /* Sacramento-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sacramento-Regular.ttf"; sourceTree = "<group>"; };
+		A4AC04C0290092D100510EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4AC04C12900939700510EDA /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		A4AC04C32900D2E000510EDA /* InitPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitPopUpView.swift; sourceTree = "<group>"; };
+		A4AC04C52900D9B900510EDA /* FinishSoloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSoloView.swift; sourceTree = "<group>"; };
 		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
 		A4EB4AA128FED542002EB67D /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +66,7 @@
 		A4378D1428EF922600DA2DA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4378D1328EF922600DA2DA0 /* Défi.app */,
+				A4378D1328EF922600DA2DA0 /* Défis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,15 +74,12 @@
 		A4378D1528EF922600DA2DA0 /* gameMath */ = {
 			isa = PBXGroup;
 			children = (
+				A4AC04C0290092D100510EDA /* Info.plist */,
+				A4AC04C72900DFBE00510EDA /* Views */,
+				A4AC04BD290091F400510EDA /* Fonts */,
 				A465ACF528F9983500517FCD /* Models */,
-				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
-				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
 				939870B128FECEE2003618FF /* AnswerButton.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
-				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
-				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
-				A4EB4AA128FED542002EB67D /* TimeView.swift */,
-				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
 				A4378D1A28EF922900DA2DA0 /* Assets.xcassets */,
 				A4378D1C28EF922900DA2DA0 /* Preview Content */,
 			);
@@ -91,9 +97,33 @@
 		A465ACF528F9983500517FCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
 				A465ACF628F9984800517FCD /* ModelGame.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A4AC04BD290091F400510EDA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4AC04BE290092B700510EDA /* Sacramento-Regular.ttf */,
+				A4AC04C12900939700510EDA /* FontsManager.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4AC04C72900DFBE00510EDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4AC04C32900D2E000510EDA /* InitPopUpView.swift */,
+				A4AC04C52900D9B900510EDA /* FinishSoloView.swift */,
+				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
+				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
+				A4EB4AA128FED542002EB67D /* TimeView.swift */,
+				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
+				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +143,7 @@
 			);
 			name = gameMath;
 			productName = gameMath;
-			productReference = A4378D1328EF922600DA2DA0 /* Défi.app */;
+			productReference = A4378D1328EF922600DA2DA0 /* Défis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4378D1E28EF922900DA2DA0 /* Preview Assets.xcassets in Resources */,
+				A4AC04BF290092B700510EDA /* Sacramento-Regular.ttf in Resources */,
 				A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,11 +199,13 @@
 			files = (
 				93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */,
 				A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */,
+				A4AC04C22900939700510EDA /* FontsManager.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
-
 				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
+				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
+				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 				A4EB4AA228FED542002EB67D /* TimeView.swift in Sources */,
@@ -307,6 +340,7 @@
 				DEVELOPMENT_TEAM = 9YF48LKAWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gameMath/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gameMath;
-				PRODUCT_NAME = "Défi";
+				PRODUCT_NAME = "Défis";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,6 +370,7 @@
 				DEVELOPMENT_TEAM = 9YF48LKAWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gameMath/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gameMath;
-				PRODUCT_NAME = "Défi";
+				PRODUCT_NAME = "Défis";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

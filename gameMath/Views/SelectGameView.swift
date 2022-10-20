@@ -42,6 +42,7 @@ struct SelectGameView: View {
                                 CardView(title: game.title, description: game.description, image: game.image)
                                 
                             }
+                            .navigationTitle("")
                             .foregroundColor(.black)
                             .multilineTextAlignment(.leading)
                             
