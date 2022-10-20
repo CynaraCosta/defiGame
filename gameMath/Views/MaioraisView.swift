@@ -72,7 +72,7 @@ struct MaioraisVIew: View {
                                 } else {
                                     HapticManager.instance.notification(type: .error)
                                     data = generateNumbers()
-                                    
+                                    playSound(sound: "windows")
                                 }
                             } label: {
                                 ZStack {

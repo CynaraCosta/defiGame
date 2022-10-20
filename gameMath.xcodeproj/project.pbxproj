@@ -27,6 +27,7 @@
 		A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C52900D9B900510EDA /* FinishSoloView.swift */; };
 		A4AC04C92901984C00510EDA /* playSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C82901984C00510EDA /* playSound.swift */; };
 		A4AC04CC290198C900510EDA /* yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AC04CB290198C900510EDA /* yeah.mp3 */; };
+		A4AC04CE29019E8000510EDA /* windows.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AC04CD29019E8000510EDA /* windows.mp3 */; };
 		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
 		A4EB4AA228FED542002EB67D /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4AA128FED542002EB67D /* TimeView.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		A4AC04C52900D9B900510EDA /* FinishSoloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSoloView.swift; sourceTree = "<group>"; };
 		A4AC04C82901984C00510EDA /* playSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSound.swift; sourceTree = "<group>"; };
 		A4AC04CB290198C900510EDA /* yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yeah.mp3; sourceTree = "<group>"; };
+		A4AC04CD29019E8000510EDA /* windows.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = windows.mp3; sourceTree = "<group>"; };
 		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
 		A4EB4AA128FED542002EB67D /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AC04CB290198C900510EDA /* yeah.mp3 */,
+				A4AC04CD29019E8000510EDA /* windows.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4378D1E28EF922900DA2DA0 /* Preview Assets.xcassets in Resources */,
+				A4AC04CE29019E8000510EDA /* windows.mp3 in Resources */,
 				A4AC04CC290198C900510EDA /* yeah.mp3 in Resources */,
 				A4AC04BF290092B700510EDA /* Sacramento-Regular.ttf in Resources */,
 				A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */,
