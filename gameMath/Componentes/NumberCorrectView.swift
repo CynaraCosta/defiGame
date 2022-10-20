@@ -8,13 +8,46 @@
 import SwiftUI
 
 struct NumberCorrectView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    let textButton: String;
+    let toGuess: Bool = false;
+    let buttonColor: Color;
+    let textColor: Color;
+    
+    init(textButton: String, buttonColor: Color, textColor: Color) {
+        self.textButton = textButton
+        self.buttonColor = buttonColor
+        self.textColor = textColor
     }
-}
-
-struct NumberCorrectView_Previews: PreviewProvider {
-    static var previews: some View {
-        NumberCorrectView()
+    
+    
+    
+    var body: some View {
+        VStack {
+            Button(action: {
+                
+            }, label: {Text(self.textButton.uppercased()).bold()
+                    .padding(0)
+                    .font(.system(size: 20, weight: .bold))
+                    .frame(width: 267, height: 40 , alignment: .center)
+                    .background(self.buttonColor)
+                    .clipShape(RoundedRectangle(cornerRadius: 4))
+                    .multilineTextAlignment(.center)
+                
+            }).buttonStyle(PlainButtonStyle())
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    struct NumberCorrectView_Previews: PreviewProvider {
+        static var previews: some View {
+            NumberCorrectView(textButton: "Doze", buttonColor: .cyan, textColor: .black)
+        }
     }
 }
