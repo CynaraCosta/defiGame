@@ -9,8 +9,11 @@ import SwiftUI
 
 struct MaioraisVIew: View {
     
-    @State var timerRunning = true
+    @State var timerRunning = false
     @State var countDownTimer = 40
+    @State private var initPopUp = true
+    @State private var blurAmount: CGFloat = 40.0
+    @State private var textGame: String = "Selecionar o maior número disposta na tela."
     
 //    private var data: [Int] = Array(1...9)
 //    private var data: [Int] = [34, 56, 2, 78, 45, 98, 66, 74, 90]
@@ -82,9 +85,13 @@ struct MaioraisVIew: View {
                     }
                 }.padding()
                 
-            }
+            }.blur(radius: blurAmount)
+            
+            InitPopUp(show: $initPopUp, blur: $blurAmount, timerRun: $timerRunning, textGame: $textGame)
             
         }
+        
+        
         
     }
     
