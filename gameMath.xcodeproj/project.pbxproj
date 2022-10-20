@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870AF28FECB77003618FF /* WheresTheNumberView.swift */; };
 		939870B228FECEE2003618FF /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870B128FECEE2003618FF /* AnswerButton.swift */; };
+		93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */; };
+		93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5237129017AF700D3EE38 /* GameButtonView.swift */; };
+		93F5237529017FFE00D3EE38 /* NumberCorrectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */; };
+		93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F52376290182E400D3EE38 /* GameButtonModel.swift */; };
+		93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F52378290186FE00D3EE38 /* ActivityItemModel.swift */; };
 		93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85A928F4449A00F9238E /* SelectGameView.swift */; };
 		A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1628EF922600DA2DA0 /* gameMathApp.swift */; };
 		A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1828EF922600DA2DA0 /* ContentView.swift */; };
@@ -27,6 +32,11 @@
 /* Begin PBXFileReference section */
 		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		939870B128FECEE2003618FF /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectView.swift; sourceTree = "<group>"; };
+		93F5237129017AF700D3EE38 /* GameButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonView.swift; sourceTree = "<group>"; };
+		93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectModel.swift; sourceTree = "<group>"; };
+		93F52376290182E400D3EE38 /* GameButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonModel.swift; sourceTree = "<group>"; };
+		93F52378290186FE00D3EE38 /* ActivityItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemModel.swift; sourceTree = "<group>"; };
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
 		A4378D1328EF922600DA2DA0 /* Défis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
@@ -55,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93F5236E290170E800D3EE38 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */,
+				93F5237129017AF700D3EE38 /* GameButtonView.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
 		A4378D0A28EF922600DA2DA0 = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +93,13 @@
 		A4378D1528EF922600DA2DA0 /* gameMath */ = {
 			isa = PBXGroup;
 			children = (
+
+				93F5236E290170E800D3EE38 /* Componentes */,
+
 				A4AC04C0290092D100510EDA /* Info.plist */,
 				A4AC04C72900DFBE00510EDA /* Views */,
 				A4AC04BD290091F400510EDA /* Fonts */,
+
 				A465ACF528F9983500517FCD /* Models */,
 				939870B128FECEE2003618FF /* AnswerButton.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
@@ -99,6 +122,9 @@
 			children = (
 				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
 				A465ACF628F9984800517FCD /* ModelGame.swift */,
+				93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */,
+				93F52376290182E400D3EE38 /* GameButtonModel.swift */,
+				93F52378290186FE00D3EE38 /* ActivityItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,14 +227,23 @@
 				A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */,
 				A4AC04C22900939700510EDA /* FontsManager.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
+				93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
+
+				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
 				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
+				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
+
+
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
+
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
+				93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 				A4EB4AA228FED542002EB67D /* TimeView.swift in Sources */,
+				93F5237529017FFE00D3EE38 /* NumberCorrectModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
