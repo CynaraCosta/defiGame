@@ -28,7 +28,7 @@
 		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		939870B128FECEE2003618FF /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
-		A4378D1328EF922600DA2DA0 /* Défi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4378D1328EF922600DA2DA0 /* Défis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
 		A4378D1828EF922600DA2DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4378D1A28EF922900DA2DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		A4378D1428EF922600DA2DA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4378D1328EF922600DA2DA0 /* Défi.app */,
+				A4378D1328EF922600DA2DA0 /* Défis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			);
 			name = gameMath;
 			productName = gameMath;
-			productReference = A4378D1328EF922600DA2DA0 /* Défi.app */;
+			productReference = A4378D1328EF922600DA2DA0 /* Défis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gameMath;
-				PRODUCT_NAME = "Défi";
+				PRODUCT_NAME = "Défis";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gameMath;
-				PRODUCT_NAME = "Défi";
+				PRODUCT_NAME = "Défis";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
