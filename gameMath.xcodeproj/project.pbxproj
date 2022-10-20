@@ -19,6 +19,7 @@
 		A4AC04BF290092B700510EDA /* Sacramento-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4AC04BE290092B700510EDA /* Sacramento-Regular.ttf */; };
 		A4AC04C22900939700510EDA /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C12900939700510EDA /* FontsManager.swift */; };
 		A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C32900D2E000510EDA /* InitPopUpView.swift */; };
+		A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C52900D9B900510EDA /* FinishSoloView.swift */; };
 		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
 		A4EB4AA228FED542002EB67D /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4AA128FED542002EB67D /* TimeView.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		A4AC04C0290092D100510EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A4AC04C12900939700510EDA /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
 		A4AC04C32900D2E000510EDA /* InitPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitPopUpView.swift; sourceTree = "<group>"; };
+		A4AC04C52900D9B900510EDA /* FinishSoloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSoloView.swift; sourceTree = "<group>"; };
 		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
 		A4EB4AA128FED542002EB67D /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,17 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				A4AC04C0290092D100510EDA /* Info.plist */,
+				A4AC04C72900DFBE00510EDA /* Views */,
 				A4AC04BD290091F400510EDA /* Fonts */,
 				A465ACF528F9983500517FCD /* Models */,
-				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
-				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
 				939870B128FECEE2003618FF /* AnswerButton.swift */,
 				A4378D1628EF922600DA2DA0 /* gameMathApp.swift */,
-				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
-				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
-				A4EB4AA128FED542002EB67D /* TimeView.swift */,
-				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
-				A4AC04C32900D2E000510EDA /* InitPopUpView.swift */,
 				A4378D1A28EF922900DA2DA0 /* Assets.xcassets */,
 				A4378D1C28EF922900DA2DA0 /* Preview Content */,
 			);
@@ -101,6 +97,7 @@
 		A465ACF528F9983500517FCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
 				A465ACF628F9984800517FCD /* ModelGame.swift */,
 			);
 			path = Models;
@@ -113,6 +110,20 @@
 				A4AC04C12900939700510EDA /* FontsManager.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4AC04C72900DFBE00510EDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4AC04C32900D2E000510EDA /* InitPopUpView.swift */,
+				A4AC04C52900D9B900510EDA /* FinishSoloView.swift */,
+				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
+				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
+				A4EB4AA128FED542002EB67D /* TimeView.swift */,
+				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
+				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
+				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 				A4EB4AA228FED542002EB67D /* TimeView.swift in Sources */,
