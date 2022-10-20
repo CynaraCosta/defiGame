@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93063BAE2901B04300A2F642 /* teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93063BAD2901B04300A2F642 /* teste.swift */; };
 		939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870AF28FECB77003618FF /* WheresTheNumberView.swift */; };
 		939870B228FECEE2003618FF /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870B128FECEE2003618FF /* AnswerButton.swift */; };
 		93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */; };
@@ -31,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		93063BAD2901B04300A2F642 /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
 		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		939870B128FECEE2003618FF /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectView.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */,
 				93F52376290182E400D3EE38 /* GameButtonModel.swift */,
 				93F52378290186FE00D3EE38 /* ActivityItemModel.swift */,
-				93063BAD2901B04300A2F642 /* teste.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,7 +225,6 @@
 				A4AC04C22900939700510EDA /* FontsManager.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */,
-				93063BAE2901B04300A2F642 /* teste.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
 				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
