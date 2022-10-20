@@ -46,6 +46,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93F5236E290170E800D3EE38 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
 		A4378D0A28EF922600DA2DA0 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +72,7 @@
 		A4378D1528EF922600DA2DA0 /* gameMath */ = {
 			isa = PBXGroup;
 			children = (
+				93F5236E290170E800D3EE38 /* Componentes */,
 				A465ACF528F9983500517FCD /* Models */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
 				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
@@ -170,7 +178,6 @@
 				A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
-
 				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
