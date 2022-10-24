@@ -8,25 +8,36 @@
 import SwiftUI
 
 struct GameButtonView: View {
-    let textButton: String
-    //let buttonActive: Bool
+    var textButton: String
     let buttonColor: Color
     let textColor: Color
+    let buttonActive: Bool
+    let changeListActivityIndex: () -> Void
     
     
     init(textButton: String,
          buttonColor: Color,
-         textColor: Color) {
+         textColor: Color,
+         buttonActive: Bool = false,
+         changedListActivityIndex: @escaping () -> Void
+    ){
         self.textButton = textButton
         self.buttonColor = buttonColor
         self.textColor = textColor
-       // self.buttonActive;: Bool = false,
+        self.buttonActive = buttonActive
+        self.changeListActivityIndex = changedListActivityIndex
     }
     
     
     var body: some View {
         VStack {
             Button(action: {
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    if buttonActive {
+                        self.changeListActivityIndex();
+                    }
+                }
                 
             }, label: {Text(self.textButton.uppercased()).bold()
                     .padding(0)
@@ -40,10 +51,15 @@ struct GameButtonView: View {
         }
     }
     
-    }
+}
 
 struct GameButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        GameButtonView(textButton: "12", buttonColor: .cyan, textColor: .black)
+        GameButtonView(
+            textButton: "12",
+            buttonColor: .cyan,
+            textColor: .black,
+            changedListActivityIndex: { print("mudou index")
+            })
     }
 }

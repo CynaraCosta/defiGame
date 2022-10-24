@@ -110,9 +110,9 @@ struct CardView: View {
 
 @ViewBuilder func getGameView(game: Game) -> some View {
     switch game.id {
-    case 0: WheresTheNumberView()
+    case 0: MaioraisVIew()
     case 1: MaioraisVIew()
-    case 2: MaioraisDuoView()
+    case 2: WheresTheNumberView(activities: SectionItemModel.initGameSolo().activities)
     case 3: MaioraisVIew()
     default: EmptyView()
     }

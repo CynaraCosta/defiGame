@@ -12,7 +12,6 @@ class NumberCorrectModel: Hashable {
     let syllable: String
     let toGuess: Bool
     
-    
     init(syllable: String, toGuess: Bool = false) {
         self.id = UUID()
         self.syllable = syllable

@@ -13,10 +13,10 @@ struct NumberCorrectView: View {
     let buttonColor: Color;
     let textColor: Color;
     
-    init(textButton: String, buttonColor: Color, textColor: Color) {
+    init(textButton: String, toGuess: Bool){
         self.textButton = textButton
-        self.buttonColor = buttonColor
-        self.textColor = textColor
+        self.buttonColor = toGuess ? Color("Aqua") : Color("Aqua100")
+        self.textColor = toGuess ? Color("Aqua") : Color("Aqua100")
     }
     
     
@@ -41,7 +41,7 @@ struct NumberCorrectView: View {
     
     struct NumberCorrectView_Previews: PreviewProvider {
         static var previews: some View {
-            NumberCorrectView(textButton: "Doze", buttonColor: .cyan, textColor: .black)
+            NumberCorrectView(textButton: "Doze", toGuess: false)
         }
     }
 }
