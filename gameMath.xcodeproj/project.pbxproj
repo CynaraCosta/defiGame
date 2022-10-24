@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		933FAAA92902D6C7001858C9 /* SectionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933FAAA82902D6C7001858C9 /* SectionItemModel.swift */; };
-		939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870AF28FECB77003618FF /* WheresTheNumberView.swift */; };
+		935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */; };
 		939870B228FECEE2003618FF /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870B128FECEE2003618FF /* AnswerButton.swift */; };
 		93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */; };
 		93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5237129017AF700D3EE38 /* GameButtonView.swift */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		933FAAA82902D6C7001858C9 /* SectionItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemModel.swift; sourceTree = "<group>"; };
-		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
+		935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		939870B128FECEE2003618FF /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectView.swift; sourceTree = "<group>"; };
 		93F5237129017AF700D3EE38 /* GameButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonView.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
 				A4EB4AA128FED542002EB67D /* TimeView.swift */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
-				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
+				935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,10 +231,10 @@
 				93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
-				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
+				935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */,
