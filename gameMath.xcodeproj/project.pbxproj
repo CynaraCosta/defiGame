@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870AF28FECB77003618FF /* WheresTheNumberView.swift */; };
+		933FAAA92902D6C7001858C9 /* SectionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933FAAA82902D6C7001858C9 /* SectionItemModel.swift */; };
+		935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */; };
 		939870B228FECEE2003618FF /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939870B128FECEE2003618FF /* AnswerButton.swift */; };
 		93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */; };
 		93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5237129017AF700D3EE38 /* GameButtonView.swift */; };
@@ -33,7 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		939870AF28FECB77003618FF /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
+		933FAAA82902D6C7001858C9 /* SectionItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemModel.swift; sourceTree = "<group>"; };
+		935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		939870B128FECEE2003618FF /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectView.swift; sourceTree = "<group>"; };
 		93F5237129017AF700D3EE38 /* GameButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonView.swift; sourceTree = "<group>"; };
@@ -99,7 +101,10 @@
 		A4378D1528EF922600DA2DA0 /* gameMath */ = {
 			isa = PBXGroup;
 			children = (
+
+
 				A4AC04CA290198BB00510EDA /* Resources */,
+
 				93F5236E290170E800D3EE38 /* Componentes */,
 				A4AC04C0290092D100510EDA /* Info.plist */,
 				A4AC04C72900DFBE00510EDA /* Views */,
@@ -129,7 +134,11 @@
 				93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */,
 				93F52376290182E400D3EE38 /* GameButtonModel.swift */,
 				93F52378290186FE00D3EE38 /* ActivityItemModel.swift */,
+
+				933FAAA82902D6C7001858C9 /* SectionItemModel.swift */,
+
 				A4AC04C82901984C00510EDA /* playSound.swift */,
+
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,8 +160,12 @@
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
-				939870AF28FECB77003618FF /* WheresTheNumberView.swift */,
+
+				935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */,
+
+				
 				A4AC04CF2901A83400510EDA /* ProgressBar.swift */,
+
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,15 +255,16 @@
 				93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */,
 				A4AC04D02901A83400510EDA /* ProgressBar.swift in Sources */,
 				A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */,
+				933FAAA92902D6C7001858C9 /* SectionItemModel.swift in Sources */,
 				A4AC04C22900939700510EDA /* FontsManager.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
-				939870B028FECB77003618FF /* WheresTheNumberView.swift in Sources */,
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
+				935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				A4AC04C92901984C00510EDA /* playSound.swift in Sources */,
