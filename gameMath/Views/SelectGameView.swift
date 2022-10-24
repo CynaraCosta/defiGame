@@ -112,7 +112,7 @@ struct CardView: View {
     switch game.id {
     case 0: WheresTheNumberView()
     case 1: MaioraisVIew()
-    case 2: MaioraisVIew()
+    case 2: MaioraisDuoView()
     case 3: MaioraisVIew()
     default: EmptyView()
     }
