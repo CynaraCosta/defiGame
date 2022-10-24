@@ -31,6 +31,7 @@
 		A4AC04D02901A83400510EDA /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04CF2901A83400510EDA /* ProgressBar.swift */; };
 		A4AC04D22906ACE800510EDA /* MaioraisDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */; };
 		A4AC04D42906DA0C00510EDA /* FinishDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */; };
+		A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */; };
 		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		A4AC04CF2901A83400510EDA /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisDuoView.swift; sourceTree = "<group>"; };
 		A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoView.swift; sourceTree = "<group>"; };
+		A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameDuoView.swift; sourceTree = "<group>"; };
 		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				A4AC04CF2901A83400510EDA /* ProgressBar.swift */,
 				A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */,
 				A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */,
+				A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
+				A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */,
 				A4AC04D22906ACE800510EDA /* MaioraisDuoView.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
