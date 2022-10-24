@@ -19,13 +19,13 @@ struct GameButtonView: View {
          buttonColor: Color,
          textColor: Color,
          buttonActive: Bool = false,
-         changeListActivityIndex: @escaping () -> Void
+         changedListActivityIndex: @escaping () -> Void
     ){
         self.textButton = textButton
         self.buttonColor = buttonColor
         self.textColor = textColor
         self.buttonActive = buttonActive
-        self.changeListActivityIndex = changeListActivityIndex
+        self.changeListActivityIndex = changedListActivityIndex
     }
     
     
@@ -59,7 +59,7 @@ struct GameButtonView_Previews: PreviewProvider {
             textButton: "12",
             buttonColor: .cyan,
             textColor: .black,
-            changeListActivityIndex: {print("mudou index")
+            changedListActivityIndex: { print("mudou index")
             })
     }
 }
