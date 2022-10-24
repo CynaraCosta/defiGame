@@ -60,13 +60,32 @@ class SectionItemModel {
         
         let exerciceTwo: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsTwo, numberCorrect: exerciceCorrectTwo)
         
+        let exerciceCorrectThree: [NumberCorrectModel] = [
+            NumberCorrectModel(syllable: "VINTE",
+            toGuess: true),
+            ]
+            
+            //botoes para advinhar
+            let exerciceButtonsThree: [GameButtonModel] = [
+                GameButtonModel(syllable: "99", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "16", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "30", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "20", buttonColor: .cyan, textColor: .white, isCorrect: true),
+                GameButtonModel(syllable: "17", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "40", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "24", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "31", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "48", buttonColor: .cyan, textColor: .white, isCorrect: false)
+            ]
+        
+        let exerciceThree: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsThree, numberCorrect: exerciceCorrectThree)
         
         
         
             
             
         
-        return SectionItemModel(activities: [exerciceOne, exerciceTwo])
+        return SectionItemModel(activities: [exerciceOne, exerciceTwo, exerciceThree,])
         
     }
     
