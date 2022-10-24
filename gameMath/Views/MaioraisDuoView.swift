@@ -76,6 +76,9 @@ struct MaioraisDuoView: View {
                                             
                                             if number == answer {
                                                 points += 10
+                                                HapticManager.instance.impact(style: .light)
+                                            } else {
+                                                HapticManager.instance.notification(type: .error)
                                             }
                                             
                                             data = generateNumbersDuo()
@@ -129,6 +132,9 @@ struct MaioraisDuoView: View {
                                         
                                         if number == answer2 {
                                             points2 += 10
+                                            HapticManager.instance.impact(style: .light)
+                                        } else {
+                                            HapticManager.instance.notification(type: .error)
                                         }
                                         
                                         data2 = generateNumbersDuo()

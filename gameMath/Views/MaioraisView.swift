@@ -54,7 +54,7 @@ struct MaioraisVIew: View {
                             .modifier(AnimatingNumberOverlay(number: CGFloat(points)))
                     }
                     
-                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .green : ((time > 5) ? .yellow : .red))
+                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .white : ((time > 5) ? .yellow : .red))
                         .animation(.spring())
                         .offset(x: 0, y: -48)
                     
