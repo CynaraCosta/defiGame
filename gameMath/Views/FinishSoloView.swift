@@ -44,7 +44,7 @@ struct FinishSoloView: View {
                 
                 VStack (spacing: 24) {
                     
-                    NavigationLink(destination: MaioraisVIew().navigationBarBackButtonHidden(true)){
+                    NavigationLink(destination: MaioraisVIew().navigationBarBackButtonHidden(false)){
                         Text("Jogar Novamente")
                             .foregroundColor(Color.black)
                             .fixedSize(horizontal: false, vertical: true)

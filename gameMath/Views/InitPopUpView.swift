@@ -26,11 +26,13 @@ struct InitPopUp: View {
                 VStack (spacing: 40) {
                     Text("Como jogar?")
                         .font(.system(size: 24, weight: .bold))
+                        .foregroundColor(.black)
                     
                     Text(textGame)
                         .multilineTextAlignment(.center)
                         .font(.system(size: 16, weight: .light))
                         .frame(width: UIScreen.main.bounds.width * 0.6)
+                        .foregroundColor(.black)
                     
                     
                     Button {
