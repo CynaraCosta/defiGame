@@ -17,7 +17,7 @@ struct DestinationView: View {
         Text("Jogo \(game)")
         
         //        .sheet(isPresented: $isPresenting, content: {
-        //            SelectGameView()
+        //            SelectGameView() 
         //    })
     }
 }
