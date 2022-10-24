@@ -17,12 +17,13 @@ class SectionItemModel {
     
     static func initGameSolo() -> SectionItemModel {
         
-        //primeira atividade 
+        //primeira atividade
         
         //model de numero escrito
         let exerciceCorrectOne: [NumberCorrectModel] = [
-            NumberCorrectModel(syllable: "DOZE", toGuess: true),
-            ]
+            NumberCorrectModel(syllable: "DOZE",
+            toGuess: true),
+        ]
             
             //botoes para advinhar
             let exerciceButtonsOne: [GameButtonModel] = [
@@ -35,14 +36,37 @@ class SectionItemModel {
                 GameButtonModel(syllable: "34", buttonColor: .cyan, textColor: .white, isCorrect: false),
                 GameButtonModel(syllable: "92", buttonColor: .cyan, textColor: .white, isCorrect: false),
                 GameButtonModel(syllable: "88", buttonColor: .cyan, textColor: .white, isCorrect: false)
-       
             ]
         
         let exerciceOne: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsOne, numberCorrect: exerciceCorrectOne)
+        
+        let exerciceCorrectTwo: [NumberCorrectModel] = [
+            NumberCorrectModel(syllable: "QUARENTA",
+            toGuess: true),
+            ]
+            
+            //botoes para advinhar
+            let exerciceButtonsTwo: [GameButtonModel] = [
+                GameButtonModel(syllable: "10", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "23", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "94", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "16", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "65", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "40", buttonColor: .cyan, textColor: .white, isCorrect: true),
+                GameButtonModel(syllable: "34", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "21", buttonColor: .cyan, textColor: .white, isCorrect: false),
+                GameButtonModel(syllable: "9", buttonColor: .cyan, textColor: .white, isCorrect: false)
+            ]
+        
+        let exerciceTwo: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsTwo, numberCorrect: exerciceCorrectTwo)
+        
+        
+        
+        
             
             
         
-        return SectionItemModel(activities: [exerciceOne])
+        return SectionItemModel(activities: [exerciceOne, exerciceTwo])
         
     }
     
