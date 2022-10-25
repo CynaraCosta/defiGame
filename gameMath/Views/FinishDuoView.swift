@@ -1,4 +1,11 @@
 //
+//  FinishDuoView.swift
+//  gameMath
+//
+//  Created by Cynara Costa on 24/10/22.
+//
+
+//
 //  FinishSoloView.swift
 //  gameMath
 //
@@ -7,16 +14,17 @@
 
 import SwiftUI
 
-struct FinishSoloView: View {
+struct FinishDuoView: View {
     
     @Binding var points: Int
+    @Binding var points2: Int
     
     var body: some View {
         
         ZStack {
             BackgroundView()
             VStack (spacing: 72){
-                Text("Parabéns você conseguiu:")
+                Text("E o vencedor foi:")
                     .font(.system(size: 26, weight: .bold))
                     .foregroundColor(.white)
                 
@@ -36,7 +44,7 @@ struct FinishSoloView: View {
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width * 0.18, height: UIScreen.main.bounds.height * 0.06)
                         
-                        Text("\(points) pontos!")
+                        Text("\(max(points, points2)) pontos!")
                             .font(.system(size: 42, weight: .bold))
                             .foregroundColor(.white)
                     }
@@ -44,7 +52,7 @@ struct FinishSoloView: View {
                 
                 VStack (spacing: 24) {
                     
-                    NavigationLink(destination: MaioraisVIew().navigationBarBackButtonHidden(false)){
+                    NavigationLink(destination: MaioraisDuoView().navigationBarBackButtonHidden(false)){
                         Text("Jogar Novamente")
                             .foregroundColor(Color.black)
                             .fixedSize(horizontal: false, vertical: true)
@@ -71,29 +79,6 @@ struct FinishSoloView: View {
                         .navigationBarHidden(true)
                         
                     
-                    
-                    
-//                    Text("Jogar Novamente")
-//                        .foregroundColor(Color.black)
-//                        .fixedSize(horizontal: false, vertical: true)
-//                        .multilineTextAlignment(.center)
-//                        .padding()
-//                        .frame(width: UIScreen.main.bounds.width * 0.775, height: UIScreen.main.bounds.height * 0.06)
-//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
-//                        .cornerRadius(50)
-//                        .font(.system(size: 20, weight: .semibold))
-//
-//
-//                    Text("Voltar ao menu")
-//                        .fixedSize(horizontal: false, vertical: true)
-//                        .foregroundColor(Color.black)
-//                        .multilineTextAlignment(.center)
-//                        .padding()
-//                        .frame(width: UIScreen.main.bounds.width * 0.775, height: UIScreen.main.bounds.height * 0.06)
-//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
-//                        .cornerRadius(50)
-//                        .font(.system(size: 20, weight: .semibold))
-                    
                 }
             
                 
@@ -112,3 +97,4 @@ struct FinishSoloView: View {
 //        }
 //    }
 //}
+

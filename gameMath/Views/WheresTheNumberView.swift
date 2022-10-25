@@ -2,85 +2,75 @@
 //  WheresTheNumberView.swift
 //  gameMath
 //
-//  Created by Danielly Santos Lopes da Silva on 18/10/22.
+//  Created by Danielly Santos Lopes da Silva on 24/10/22.
 //
 
 import SwiftUI
 
 struct WheresTheNumberView: View {
-    @State private var correctAnswer = 0
-    @State private var choiceArray : [Int] = [0, 1, 2, 3]
-    @State private var firstNumber = 0
-    @State private var secondNumber = 0
-    @State private var difficulty = 100
-    @State private var score = 0 
     
-
-    var body: some View {
-        VStack(spacing: 40) {
-            
-            Text("Score: \(score)")
-            
-            
-            Text("\(firstNumber) + \(secondNumber)")
-            
-            HStack {
-                ForEach(0..<2) { index in
-                    Button {
-                        answerIsCorrect(answer: choiceArray[index])
-                        generateAnswers()
-                    } label: {
-                        AnswerButton(number: choiceArray[index])
-                    }
-                }
-            }
-            
-            
-            HStack {
-                ForEach(2..<4) { index in
-                    Button {
-                        answerIsCorrect(answer: choiceArray[index])
-                        generateAnswers()
-                    } label: {
-                        AnswerButton(number: choiceArray[index])
-                    }
-                }
-            }
-          
-        }.onAppear(perform: generateAnswers)
-        
+    @Environment(\.presentationMode) var presentationMode
+    
+    let activities: [ActivityItemModel]
+    @State var activityIndex: Int = 0
+    
+    init(activities: [ActivityItemModel]) {
+        self.activities = activities
     }
     
-    func answerIsCorrect(answer: Int) {
-        let isCorrect = answer == correctAnswer ? true : false
-        
-        if isCorrect {
-            self.score += 4
+    func changeListActivityIndex() -> Void {
+        if (
+            (self.activityIndex + 1) <= (self.activities.count - 1)) {
+            self.activityIndex += 1
         } else {
-            self.score -= 1
+            self.presentationMode.wrappedValue.dismiss()
         }
     }
     
     
-    func generateAnswers() {
-        firstNumber = Int.random(in: 0...(difficulty/2))
-        secondNumber = Int.random(in: 0...(difficulty/2))
-        var answerList = [Int]()
-        
-        correctAnswer = firstNumber + secondNumber
-        
-        for i in 0...2 {
-            answerList.append(Int.random(in: 0...difficulty))
+    var body: some View {
+        VStack {
+            // sentenca para advinhar
+            LazyVGrid(columns: [
+                GridItem(.adaptive(minimum: 100))
+            ],
+                      spacing: 20) {
+                ForEach(activities[activityIndex].numberCorrect, id: \.id ) {
+                    numberCorrect in
+                    NumberCorrectView(
+                        textButton: numberCorrect.syllable ,
+                        toGuess: numberCorrect.toGuess)
+                }
+            }
+            
+            
+            // sentenca de gamebuttons
+            LazyVGrid(columns: [
+                GridItem(.adaptive(minimum: 100))
+            ],
+                      spacing: 20) {
+                ForEach(activities[activityIndex].gameButton, id: \.id ) {
+                    gameButton in
+                    GameButtonView(
+                        textButton: gameButton.syllable,
+                        buttonColor: gameButton.buttonColor,
+                        textColor: gameButton.textColor,
+                        buttonActive: gameButton.isCorrect,
+                        changedListActivityIndex: self.changeListActivityIndex
+                    )
+                }
+            }
+            
+            
         }
         
-        answerList.append(correctAnswer)
         
-        choiceArray = answerList.shuffled()
     }
-}
-
-struct WheresTheNumberView_Previews: PreviewProvider {
-    static var previews: some View {
-        WheresTheNumberView()
+    
+    struct WheresTheNumberView_Previews: PreviewProvider {
+        static var previews: some View {
+            WheresTheNumberView(activities: SectionItemModel.initGameSolo().activities)
+        }
     }
+    
 }
