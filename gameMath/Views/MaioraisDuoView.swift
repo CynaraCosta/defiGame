@@ -102,7 +102,7 @@ struct MaioraisDuoView: View {
                             }
                             
                             
-                        }
+                        }.frame(width: UIScreen.main.bounds.width)
                         
                         
                     }.rotationEffect(.radians(.pi))
@@ -110,7 +110,7 @@ struct MaioraisDuoView: View {
                         .ignoresSafeArea(edges: .all)
                         
                     
-                    VStack {
+                    VStack (alignment: .center) {
                         Rectangle()
                             .fill(.white)
                             .frame(minWidth: 0, maxWidth: .infinity)
@@ -162,6 +162,7 @@ struct MaioraisDuoView: View {
                 }.padding().background(Color.white)
                     .edgesIgnoringSafeArea(.all)
                     .blur(radius: blurAmount)
+                    
                 
                 ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .green : ((time > 5) ? .yellow : .red))
                     .animation(.spring())
@@ -178,6 +179,8 @@ struct MaioraisDuoView: View {
                 }
             }
             .edgesIgnoringSafeArea(.all)
+            
+            
         } else {
             FinishDuoView(points: $points, points2: $points2)
         }
