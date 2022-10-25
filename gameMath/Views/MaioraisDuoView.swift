@@ -111,51 +111,57 @@ struct MaioraisDuoView: View {
                         
                     
                     VStack (alignment: .center) {
-                        Rectangle()
-                            .fill(.white)
-                            .frame(minWidth: 0, maxWidth: .infinity)
                         
-                        VStack {
+                        ZStack {
+                            Rectangle()
+                                .fill(.white)
+                                .frame(minWidth: 0, maxWidth: .infinity)
                             
-                            VStack (spacing: 16) {
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(Color("Blue800"))
-                                Text("\(points2)")
-                                    .foregroundColor(Color("Blue800"))
-                                    .font(.system(size: 24, weight: .bold))
-                            }
-                    
                             
-                            LazyVGrid(columns: adaptiveColumns, spacing: 20) {
-                                ForEach(data2, id: \.self) { number in
-                                    Button (action: {
-                                        
-                                        if number == answer2 {
-                                            points2 += 10
-                                            HapticManager.instance.impact(style: .light)
-                                        } else {
-                                            HapticManager.instance.notification(type: .error)
-                                        }
-                                        
-                                        data2 = generateNumbersDuo()
-                                        
-                                    }, label: {
-                                        ZStack {
-                                            Rectangle()
-                                                .frame(width: UIScreen.main.bounds.width * 0.25, height: UIScreen.main.bounds.height * 0.11)
-                                                .cornerRadius(8)
-                                                .foregroundColor(Color("Blue800"))
-                                            
-                                            Text("\(number)")
-                                                .foregroundColor(.white)
-                                                .font(.system(size: 18, weight: .regular))
-                                        }
-                                    })
-                                    
+                            VStack (alignment: .center){
+                                
+                                VStack (spacing: 16) {
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(Color("Blue800"))
+                                    Text("\(points2)")
+                                        .foregroundColor(Color("Blue800"))
+                                        .font(.system(size: 24, weight: .bold))
                                 }
-                            }.padding()
-                            
+                        
+                                
+                                LazyVGrid(columns: adaptiveColumns, spacing: 20) {
+                                    ForEach(data2, id: \.self) { number in
+                                        Button (action: {
+                                            
+                                            if number == answer2 {
+                                                points2 += 10
+                                                HapticManager.instance.impact(style: .light)
+                                            } else {
+                                                HapticManager.instance.notification(type: .error)
+                                            }
+                                            
+                                            data2 = generateNumbersDuo()
+                                            
+                                        }, label: {
+                                            ZStack {
+                                                Rectangle()
+                                                    .frame(width: UIScreen.main.bounds.width * 0.25, height: UIScreen.main.bounds.height * 0.11)
+                                                    .cornerRadius(8)
+                                                    .foregroundColor(Color("Blue800"))
+                                                
+                                                Text("\(number)")
+                                                    .foregroundColor(.white)
+                                                    .font(.system(size: 18, weight: .regular))
+                                            }
+                                        })
+                                        
+                                    }
+                                }.padding()
+                                
+                            }
                         }
+                        
+                        
                         
                     }
 
