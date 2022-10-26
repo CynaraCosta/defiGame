@@ -46,33 +46,58 @@ struct FinishDuoPopUp: View {
                     
                     
                     HStack (spacing: 16) {
-                        Button {
-                            withAnimation{
-                                
-                            }
-                        }label: {
+//                        Button {
+//                            withAnimation{
+//
+//                            }
+//                        }label: {
+//                            Text("De novo!")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 16, weight: .semibold))
+//                                .padding()
+//                                .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.04)
+//                                .background(Color("PurpleDetail"))
+//                                .cornerRadius(50)
+//                        }
+//
+//                        Button {
+//                            withAnimation{
+//
+//                            }
+//                        }label: {
+//                            Text("Menu")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 16, weight: .semibold))
+//                                .padding()
+//                                .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.04)
+//                                .background(Color("PurpleDetail"))
+//                                .cornerRadius(50)
+//                        }
+                        NavigationLink(destination: MaioraisDuoView().navigationBarBackButtonHidden(false)){
                             Text("De novo!")
-                                .foregroundColor(.white)
-                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(Color.white)
+//                                .fixedSize(horizontal: false, vertical: true)
+                                .multilineTextAlignment(.center)
                                 .padding()
                                 .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.04)
-                                .background(Color("PurpleDetail"))
+                                .background(Rectangle().fill(Color("PurpleDetail")).shadow(radius: 3))
                                 .cornerRadius(50)
+                                .font(.system(size: 16, weight: .semibold))
                         }
-                        
-                        Button {
-                            withAnimation{
-                                
-                            }
-                        }label: {
+
+                        NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
                             Text("Menu")
-                                .foregroundColor(.white)
-                                .font(.system(size: 16, weight: .semibold))
+//                                .fixedSize(horizontal: false, vertical: true)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
                                 .padding()
                                 .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.04)
-                                .background(Color("PurpleDetail"))
+                                .background(Rectangle().fill(Color("PurpleDetail")).shadow(radius: 3))
                                 .cornerRadius(50)
-                        }
+                                .font(.system(size: 16, weight: .semibold))
+
+                        }.navigationBarTitle("")
+                            .navigationBarHidden(true)
                         
                     }
                     

@@ -20,7 +20,7 @@ struct MaioraisDuoView: View {
     @State private var blurAmount: CGFloat = 32.0
     @State private var blurAmountFinal: CGFloat = 0.0
     
-    @State var timerRunning = true
+    @State var timerRunning = false
     @State private var data: [Int] = generateNumbersDuo()
     @State private var data2: [Int] = generateNumbersDuo()
     
@@ -101,10 +101,12 @@ struct MaioraisDuoView: View {
                                 }
                             }.padding()
                             
-                        }.blur(radius: blurAmountFinal)
+                        }.blur(radius: time == 0 ? blurAmountFinal : 0.0)
                         
-                        
+                        if time == 0 {
                             FinishDuoPopUp(show: $duoPopUp, blur: $blurAmountFinal, points: $points, win: $win)
+                        }
+                            
                         
                         
                         
@@ -165,9 +167,11 @@ struct MaioraisDuoView: View {
                                 }
                             }.padding()
                             
-                        }.blur(radius: blurAmountFinal)
+                        }.blur(radius: time == 0 ? blurAmountFinal : 0.0)
                         
-                        FinishDuoPopUp(show: $duoPopUp, blur: $blurAmountFinal, points: $points2, win: $win2)
+                        if time == 0 {
+                            FinishDuoPopUp(show: $duoPopUp, blur: $blurAmountFinal, points: $points2, win: $win2)
+                        }
                         
                     }
                     
