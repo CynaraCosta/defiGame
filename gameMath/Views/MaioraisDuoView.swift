@@ -28,6 +28,12 @@ struct MaioraisDuoView: View {
     @State private var win: Bool = false
     @State private var win2: Bool = false
     
+    @State var confetti: Bool = false
+    @State var finishConfetti: Bool = false
+    
+    @State var confetti2: Bool = false
+    @State var finishConfetti2: Bool = false
+    
     @State private var textGame: String = "Selecionar o maior número disposta na tela."
     
     
@@ -106,8 +112,11 @@ struct MaioraisDuoView: View {
                         if time == 0 {
                             FinishDuoPopUp(show: $duoPopUp, blur: $blurAmountFinal, points: $points, win: $win)
                         }
-                            
                         
+                        EmitterView()
+                            .scaleEffect(confetti ? 1 : 0, anchor: .top)
+                            .opacity(confetti && !finishConfetti ? 1 : 0)
+                            .ignoresSafeArea()
                         
                         
                     }.frame(width: UIScreen.main.bounds.width)
@@ -173,6 +182,11 @@ struct MaioraisDuoView: View {
                             FinishDuoPopUp(show: $duoPopUp, blur: $blurAmountFinal, points: $points2, win: $win2)
                         }
                         
+                        EmitterView()
+                            .scaleEffect(confetti2 ? 1 : 0, anchor: .top)
+                            .opacity(confetti2 && !finishConfetti2 ? 1 : 0)
+                            .ignoresSafeArea()
+                        
                     }
                     
                     
@@ -201,24 +215,51 @@ struct MaioraisDuoView: View {
                 
                 if points > points2 {
                     win = true
+                    doConfetti()
                 } else if points2 > points{
                     win2 = true
-                } else {
+                    doConfetti2()
+                } else if points == points2 {
                     win = true
                     win2 = true
+                    
                 }
                 
             }
         }
         .edgesIgnoringSafeArea(.all)
+
+    }
+    
+    func doConfetti(){
+        withAnimation(.spring()) {
+            confetti = true
+        }
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            withAnimation(.easeInOut(duration: 1.5)){
+                finishConfetti = true
+            }
+        }
         
+    }
+    
+    func doConfetti2(){
+        withAnimation(.spring()) {
+            confetti2 = true
+        }
         
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            withAnimation(.easeInOut(duration: 1.5)){
+                finishConfetti2 = true
+            }
+        }
         
     }
     
 }
+
+
 
 func generateNumbersDuo() -> [Int] {
     var set = Set<Int>()
