@@ -34,6 +34,9 @@
 		A4AC04D42906DA0C00510EDA /* FinishDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */; };
 		A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */; };
 		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
+		EE473B10290827570091134C /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B0F290827570091134C /* MemoryGameView.swift */; };
+		EE473B1229082A3D0091134C /* MemoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B1129082A3D0091134C /* MemoryDetails.swift */; };
+		EE473B1429082A640091134C /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B1329082A640091134C /* MemoryCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoView.swift; sourceTree = "<group>"; };
 		A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameDuoView.swift; sourceTree = "<group>"; };
 		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
+		EE473B0F290827570091134C /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		EE473B1129082A3D0091134C /* MemoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDetails.swift; sourceTree = "<group>"; };
+		EE473B1329082A640091134C /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +113,7 @@
 		A4378D1528EF922600DA2DA0 /* gameMath */ = {
 			isa = PBXGroup;
 			children = (
-
-
 				A4AC04CA290198BB00510EDA /* Resources */,
-
 				93F5236E290170E800D3EE38 /* Componentes */,
 				A4AC04C0290092D100510EDA /* Info.plist */,
 				A4AC04C72900DFBE00510EDA /* Views */,
@@ -135,16 +138,14 @@
 		A465ACF528F9983500517FCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE473B1129082A3D0091134C /* MemoryDetails.swift */,
 				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
 				A465ACF628F9984800517FCD /* ModelGame.swift */,
 				93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */,
 				93F52376290182E400D3EE38 /* GameButtonModel.swift */,
 				93F52378290186FE00D3EE38 /* ActivityItemModel.swift */,
-
 				933FAAA82902D6C7001858C9 /* SectionItemModel.swift */,
-
 				A4AC04C82901984C00510EDA /* playSound.swift */,
-
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,19 +163,17 @@
 			isa = PBXGroup;
 			children = (
 				A4AC04C32900D2E000510EDA /* InitPopUpView.swift */,
+				EE473B0F290827570091134C /* MemoryGameView.swift */,
+				EE473B1329082A640091134C /* MemoryCardView.swift */,
 				A4AC04C52900D9B900510EDA /* FinishSoloView.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
-
 				935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */,
-
-				
 				A4AC04CF2901A83400510EDA /* ProgressBar.swift */,
 				A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */,
 				A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */,
 				A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */,
-        
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,17 +271,17 @@
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
+				EE473B10290827570091134C /* MemoryGameView.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
+				EE473B1229082A3D0091134C /* MemoryDetails.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
-
 				A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */,
 				A4AC04D22906ACE800510EDA /* MaioraisDuoView.swift in Sources */,
-
 				935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */,
-
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				A4AC04C92901984C00510EDA /* playSound.swift in Sources */,
+				EE473B1429082A640091134C /* MemoryCardView.swift in Sources */,
 				93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 				93F5237529017FFE00D3EE38 /* NumberCorrectModel.swift in Sources */,
@@ -414,7 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameMath/Preview Content\"";
-				DEVELOPMENT_TEAM = 9YF48LKAWG;
+				DEVELOPMENT_TEAM = YR72926579;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameMath/Info.plist;
@@ -444,7 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameMath/Preview Content\"";
-				DEVELOPMENT_TEAM = 9YF48LKAWG;
+				DEVELOPMENT_TEAM = YR72926579;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameMath/Info.plist;
