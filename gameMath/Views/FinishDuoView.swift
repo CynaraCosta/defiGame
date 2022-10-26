@@ -14,6 +14,7 @@
 
 import SwiftUI
 
+
 struct FinishDuoView: View {
     
     @Binding var points: Int
