@@ -65,9 +65,13 @@ struct MemoryCardView: View {
         if UserChoices[0].text == UserChoices[1].text {
             MatchedCards.append(UserChoices[0])
             MatchedCards.append(UserChoices[1])
+            
+            playSound(sound: "hit")
+            HapticManager.instance.impact(style: .light)
         }
         
         UserChoices.removeAll()
+        
     }
 }
 

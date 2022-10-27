@@ -17,7 +17,7 @@ struct MemoryGameView: View {
     @State var show = false
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 32.0
-    @State private var textGame: String = "Jogo da memoria e tals blablabla."
+    @State private var textGame: String = "Encontre os pares dos personagens no menor tempo possível."
     @State var cards = createCardList().shuffled()
     @State var MatchedCards = [Card]()
     @State var UserChoices = [Card]()
