@@ -29,8 +29,11 @@ struct WheresTheNumberView: View {
     
     
     var body: some View {
-        VStack {
-            // sentenca para advinhar
+        ZStack {
+            
+            CadeONumeroBackgroundView()
+            
+            
             LazyVGrid(columns: [
                 GridItem(.adaptive(minimum: 100))
             ],
@@ -44,7 +47,6 @@ struct WheresTheNumberView: View {
             }
             
             
-            // sentenca de gamebuttons
             LazyVGrid(columns: [
                 GridItem(.adaptive(minimum: 100))
             ],
@@ -66,6 +68,22 @@ struct WheresTheNumberView: View {
         
         
     }
+    
+    
+    struct CadeONumeroBackgroundView: View {
+        
+        var body: some View {
+            LinearGradient(gradient: Gradient(colors: [Color("Purple800"), Color("Blue800")]),
+                           startPoint: .bottomTrailing,
+                           endPoint: .topLeading)
+            .edgesIgnoringSafeArea(.all)
+        }
+    }
+    
+    
+    
+    
+    
     
     struct WheresTheNumberView_Previews: PreviewProvider {
         static var previews: some View {
