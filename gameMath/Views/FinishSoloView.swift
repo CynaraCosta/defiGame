@@ -13,6 +13,8 @@ struct FinishSoloView: View {
     @State var confetti: Bool = false
     @State var finishConfetti: Bool = false
     
+    @AppStorage("record_maioral_solo") private var record = 0
+    
     var body: some View {
         
         ZStack {
@@ -33,7 +35,7 @@ struct FinishSoloView: View {
                                         .stroke(Color.white, lineWidth: 1)
                                 )
                     
-                    VStack {
+                    VStack (spacing: 8) {
                         Image("crown")
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width * 0.18, height: UIScreen.main.bounds.height * 0.06)
@@ -41,6 +43,11 @@ struct FinishSoloView: View {
                         Text("\(points) pontos!")
                             .font(.system(size: 42, weight: .bold))
                             .foregroundColor(.white)
+                        
+                        Text("Recorde: \(record) pontos")
+                            .font(.system(size: 20, weight: .regular))
+                            .foregroundColor(.white)
+                        
                     }
                 }
                 
@@ -85,6 +92,9 @@ struct FinishSoloView: View {
                 .opacity(confetti && !finishConfetti ? 1 : 0)
                 .ignoresSafeArea()
         }.onAppear {
+            if points > record {
+                record = points
+            }
             doConfetti()
         }
         
