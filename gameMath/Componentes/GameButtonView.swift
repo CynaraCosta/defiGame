@@ -40,8 +40,15 @@ struct GameButtonView: View {
         VStack {
             Button(action: {
                 
+                if buttonActive == true {
+                    HapticManager.instance.impact(style: .light)
+                    
+                } else {
+                    HapticManager.instance.notification(type: .error)
+                }
                 
                 SoundManager.instance.playSound(sound: self.sound)
+                
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     if buttonActive {
@@ -49,25 +56,17 @@ struct GameButtonView: View {
                     }
                 }
                 
-                
                 buttonClicked = true
                 buttonClicked = false
-                
-                
-                
-                
-                
-                
                 
             }, label: {Text(self.textButton.uppercased())
                     .padding(0)
                     .font(.system(size: 20, weight: .regular))
                     .frame(width: UIScreen.main.bounds.width * 0.25,
                            height: UIScreen.main.bounds.height * 0.11)
-//                    .frame(width: 78, height: 63 , alignment: .center)
                     .background(self.buttonColor)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
-                   
+                
                     .multilineTextAlignment(.center)
                 
             }).buttonStyle(PlainButtonStyle())
