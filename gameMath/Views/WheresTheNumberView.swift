@@ -50,8 +50,7 @@ struct WheresTheNumberView: View {
                         Image(systemName: "star.fill")
                             .foregroundColor(.white)
                         Circle()
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 40, weight: .semibold))
+
                             .fill(.clear)
                             .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
                     }
@@ -85,6 +84,7 @@ struct WheresTheNumberView: View {
                                 textButton: gameButton.syllable,
                                 buttonColor: gameButton.buttonColor,
                                 textColor: gameButton.textColor,
+                                sound: gameButton.sound,
                                 buttonActive: gameButton.isCorrect,
                                 changedListActivityIndex: self.changeListActivityIndex
                             )
@@ -108,9 +108,9 @@ struct WheresTheNumberView: View {
             
         } else {
             
-            //            withAnimation {
-            ////                FinishSoloView(points: $points)
-            //            }
+//                        withAnimation {
+//                            GameButtonView(textButton: <#String#>, buttonColor: <#Color#>, textColor: <#Color#>, changedListActivityIndex: <#() -> Void#>)
+//                        }
             
         }
         

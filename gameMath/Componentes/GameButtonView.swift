@@ -9,10 +9,10 @@ import SwiftUI
 
 struct GameButtonView: View {
     
-    
+
     @State var buttonClicked = false
     
-    
+    var sound: String
     var textButton: String
     let buttonColor: Color
     let textColor: Color
@@ -23,12 +23,14 @@ struct GameButtonView: View {
     init(textButton: String,
          buttonColor: Color,
          textColor: Color,
+         sound: String,
          buttonActive: Bool = false,
          changedListActivityIndex: @escaping () -> Void
     ){
         self.textButton = textButton
         self.buttonColor = buttonColor
         self.textColor = textColor
+        self.sound = sound
         self.buttonActive = buttonActive
         self.changeListActivityIndex = changedListActivityIndex
     }
@@ -48,10 +50,7 @@ struct GameButtonView: View {
                 buttonClicked = true
                 buttonClicked = false
                 
-                
-                
-                
-                
+   
                 
                 
             }, label: {Text(self.textButton.uppercased())
@@ -77,6 +76,7 @@ struct GameButtonView_Previews: PreviewProvider {
             textButton: "12",
             buttonColor: Color("GrayFullWhite"),
             textColor: Color("Blue1000"),
+            sound: "yeah",
             changedListActivityIndex: { print("mudou index")
             })
     }
