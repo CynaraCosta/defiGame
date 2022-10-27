@@ -30,18 +30,23 @@ struct FinishDuoPopUp: View {
                     VStack (spacing: 8) {
                         Text("Parabéns!")
                             .font(.system(size: 20, weight: .regular))
+                            .foregroundColor(.black)
                         if win {
                             Text("Você ganhou com")
                                 .font(.system(size: 20, weight: .regular))
+                                .foregroundColor(.black)
                         } else {
                             Text("Você fez")
                                 .font(.system(size: 20, weight: .regular))
+                                .foregroundColor(.black)
                         }
                         
                         Text("\(points)")
                             .font(.system(size: 32, weight: .bold))
+                            .foregroundColor(.black)
                         Text("pontos!")
                             .font(.system(size: 20, weight: .regular))
+                            .foregroundColor(.black)
                     }
                     
                     
