@@ -13,6 +13,9 @@ struct MaioraisVIew: View {
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 32.0
     @State private var textGame: String = "Selecionar o maior número disposta na tela."
+
+    
+    var initPoints = 0
     
 //    private var data: [Int] = Array(1...9)
 //    private var data: [Int] = [34, 56, 2, 78, 45, 98, 66, 74, 90]
@@ -112,8 +115,10 @@ struct MaioraisVIew: View {
             .onReceive(timerTimer) { _ in
                 if time > 0 && timerRunning {
                     time -= 1
+                    
                 } else {
                     timerRunning = false
+                    
                 }
             }
             
