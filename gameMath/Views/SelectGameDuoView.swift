@@ -18,7 +18,13 @@ struct SelectGameDuoView: View {
         ZStack {
             BackgroundViewSelectGameView()
             
-            VStack {
+            VStack (spacing: 32){
+                
+                Text("Selecione um dos mini jogos abaixo!")
+//                    .offset(x: 0, y: -40)
+                    .font(.system(size: 20, weight: .semibold))
+                    .foregroundColor(.white)
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 20) {
                         ForEach(gamesViewModel.games) { game in
@@ -35,7 +41,7 @@ struct SelectGameDuoView: View {
                     }
                 }
                 .padding(.horizontal)
-                    .offset(x: 0, y: -40)
+//                    .offset(x: 0, y: -40)
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65, alignment: .center)
 
