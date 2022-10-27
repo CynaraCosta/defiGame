@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct GameButtonView: View {
+    
+    
+    @State var buttonClicked = false
+    
+    
     var textButton: String
     let buttonColor: Color
     let textColor: Color
@@ -38,6 +43,16 @@ struct GameButtonView: View {
                         self.changeListActivityIndex();
                     }
                 }
+                
+                
+                buttonClicked = true
+                buttonClicked = false
+                
+                
+                
+                
+                
+                
                 
             }, label: {Text(self.textButton.uppercased())
                     .padding(0)

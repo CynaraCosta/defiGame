@@ -106,15 +106,15 @@ class SectionItemModel {
         ]
         
         let exerciceButtonsFive: [GameButtonModel] = [
-            GameButtonModel(syllable: "76", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "43", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "76", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "15", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "26", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "80", buttonColor: .cyan, textColor: .white, isCorrect: true),
-            GameButtonModel(syllable: "35", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "16", buttonColor: .cyan, textColor: .white, isCorrect: false),
-            GameButtonModel(syllable: "12", buttonColor: .cyan, textColor: .white, isCorrect: false)
+            GameButtonModel(syllable: "76", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "43", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "76", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "15", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "26", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "80", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: true),
+            GameButtonModel(syllable: "35", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false),
+            GameButtonModel(syllable: "12", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), isCorrect: false)
         ]
         
         let exerciceFive: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsFive, numberCorrect: exerciceCorrectFive)
