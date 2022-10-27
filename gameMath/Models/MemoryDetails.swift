@@ -25,7 +25,7 @@ class Card: Identifiable, ObservableObject{
 }
 
 let cardValues:[Image] = [
-    Image("Alazao"), Image("Dogão"), Image("Gaturro"), Image("Pandoca"), Image("Piggo"), Image("Sapoide")
+    Image("Alazao"), Image("Dogao"), Image("Gaturro"), Image("Pandoca"), Image("Piggo"), Image("Sapoide")
 ]
 
 

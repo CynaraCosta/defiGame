@@ -19,7 +19,7 @@ struct MemoryFinishView: View {
         ZStack {
             BackgroundView()
             VStack (spacing: 72){
-                Text("Parabéns você conseguiu:")
+                Text("Parabéns você conseguiu em:")
                     .font(.system(size: 26, weight: .bold))
                     .foregroundColor(.white)
                 
