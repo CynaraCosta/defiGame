@@ -11,11 +11,15 @@ class NumberCorrectModel: Hashable {
     let id: UUID
     let syllable: String
     let toGuess: Bool
+    let buttonColor: Color
+    let textColor: Color
     
-    init(syllable: String, toGuess: Bool = false) {
+    init(syllable: String, buttonColor: Color, textColor: Color, toGuess: Bool = false) {
         self.id = UUID()
         self.syllable = syllable
         self.toGuess = toGuess
+        self.textColor = textColor
+        self.buttonColor = buttonColor
     }
     
     static func == (lhs:NumberCorrectModel, rhs: NumberCorrectModel) -> Bool {
@@ -26,5 +30,7 @@ class NumberCorrectModel: Hashable {
         hasher.combine(id)
         hasher.combine(syllable)
         hasher.combine(toGuess)
+        hasher.combine(textColor)
+        hasher.combine(buttonColor)
     }
 }

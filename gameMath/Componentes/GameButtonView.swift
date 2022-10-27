@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct GameButtonView: View {
+    
+    
+    @State var buttonClicked = false
+    
+    let sound: SoundOption
     var textButton: String
     let buttonColor: Color
     let textColor: Color
@@ -18,12 +23,14 @@ struct GameButtonView: View {
     init(textButton: String,
          buttonColor: Color,
          textColor: Color,
+         sound: SoundOption,
          buttonActive: Bool = false,
          changedListActivityIndex: @escaping () -> Void
     ){
         self.textButton = textButton
         self.buttonColor = buttonColor
         self.textColor = textColor
+        self.sound = sound
         self.buttonActive = buttonActive
         self.changeListActivityIndex = changedListActivityIndex
     }
@@ -33,18 +40,33 @@ struct GameButtonView: View {
         VStack {
             Button(action: {
                 
+                if buttonActive == true {
+                    HapticManager.instance.impact(style: .light)
+                    
+                } else {
+                    HapticManager.instance.notification(type: .error)
+                }
+                
+                SoundManager.instance.playSound(sound: self.sound)
+                
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     if buttonActive {
                         self.changeListActivityIndex();
                     }
                 }
                 
-            }, label: {Text(self.textButton.uppercased()).bold()
+                buttonClicked = true
+                buttonClicked = false
+                
+            }, label: {Text(self.textButton.uppercased())
                     .padding(0)
-                    .font(.system(size: 20, weight: .bold))
-                    .frame(width: 78, height: 63 , alignment: .center)
+                    .font(.system(size: 20, weight: .regular))
+                    .frame(width: UIScreen.main.bounds.width * 0.25,
+                           height: UIScreen.main.bounds.height * 0.11)
                     .background(self.buttonColor)
-                    .clipShape(RoundedRectangle(cornerRadius: 4))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
                     .multilineTextAlignment(.center)
                 
             }).buttonStyle(PlainButtonStyle())
@@ -57,8 +79,9 @@ struct GameButtonView_Previews: PreviewProvider {
     static var previews: some View {
         GameButtonView(
             textButton: "12",
-            buttonColor: .cyan,
-            textColor: .black,
+            buttonColor: Color("GrayFullWhite"),
+            textColor: Color("Blue1000"),
+            sound: SoundOption.yeah,
             changedListActivityIndex: { print("mudou index")
             })
     }

@@ -15,8 +15,8 @@ struct NumberCorrectView: View {
     
     init(textButton: String, toGuess: Bool){
         self.textButton = textButton
-        self.buttonColor = toGuess ? Color("Aqua") : Color("Aqua100")
-        self.textColor = toGuess ? Color("Aqua") : Color("Aqua100")
+        self.buttonColor = toGuess ? Color("GrayFullWhite") : Color("GrayFullWhite")
+        self.textColor = toGuess ? Color("Ocean") : Color("Ocean")
     }
     
     
@@ -25,11 +25,12 @@ struct NumberCorrectView: View {
         VStack {
             Button(action: {
                 
-            }, label: {Text(self.textButton.uppercased()).bold()
+            }, label: {Text(self.textButton.uppercased())
                     .padding(0)
-                    .font(.system(size: 20, weight: .bold))
-                    .frame(width: 267, height: 40 , alignment: .center)
+                    .font(.system(size: 20, weight: .medium))
+                    .frame(width: 300, height: 50, alignment: .center)
                     .background(self.buttonColor)
+                    .foregroundColor(textColor)
                     .clipShape(RoundedRectangle(cornerRadius: 4))
                     .multilineTextAlignment(.center)
                 
