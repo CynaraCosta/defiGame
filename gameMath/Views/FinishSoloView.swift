@@ -10,6 +10,8 @@ import SwiftUI
 struct FinishSoloView: View {
     
     @Binding var points: Int
+    @State var confetti: Bool = false
+    @State var finishConfetti: Bool = false
     
     var body: some View {
         
@@ -71,44 +73,34 @@ struct FinishSoloView: View {
                         .navigationBarHidden(true)
                         
                     
-                    
-                    
-//                    Text("Jogar Novamente")
-//                        .foregroundColor(Color.black)
-//                        .fixedSize(horizontal: false, vertical: true)
-//                        .multilineTextAlignment(.center)
-//                        .padding()
-//                        .frame(width: UIScreen.main.bounds.width * 0.775, height: UIScreen.main.bounds.height * 0.06)
-//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
-//                        .cornerRadius(50)
-//                        .font(.system(size: 20, weight: .semibold))
-//
-//
-//                    Text("Voltar ao menu")
-//                        .fixedSize(horizontal: false, vertical: true)
-//                        .foregroundColor(Color.black)
-//                        .multilineTextAlignment(.center)
-//                        .padding()
-//                        .frame(width: UIScreen.main.bounds.width * 0.775, height: UIScreen.main.bounds.height * 0.06)
-//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
-//                        .cornerRadius(50)
-//                        .font(.system(size: 20, weight: .semibold))
+
                     
                 }
             
                 
             }
             
-            
+            EmitterView()
+                .scaleEffect(confetti ? 1 : 0, anchor: .top)
+                .opacity(confetti && !finishConfetti ? 1 : 0)
+                .ignoresSafeArea()
+        }.onAppear {
+            doConfetti()
         }
         
     }
-}
+    
+    func doConfetti(){
+                withAnimation(.spring()) {
+                    confetti = true
+                }
 
-//struct FinishSoloView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Group {
-//            FinishSoloView(points: $points)
-//        }
-//    }
-//}
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation(.easeInOut(duration: 1)){
+                        finishConfetti = true
+                    }
+                }
+
+            }
+    
+}
