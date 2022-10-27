@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		933FAAA92902D6C7001858C9 /* SectionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933FAAA82902D6C7001858C9 /* SectionItemModel.swift */; };
 		935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */; };
+		937E8D55290ABA5A0063F35B /* SoundButtonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E8D54290ABA5A0063F35B /* SoundButtonClass.swift */; };
+		937E8D57290ABAC60063F35B /* SoundOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E8D56290ABAC60063F35B /* SoundOption.swift */; };
 		93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */; };
 		93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5237129017AF700D3EE38 /* GameButtonView.swift */; };
 		93F5237529017FFE00D3EE38 /* NumberCorrectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		933FAAA82902D6C7001858C9 /* SectionItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemModel.swift; sourceTree = "<group>"; };
 		935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
+		937E8D54290ABA5A0063F35B /* SoundButtonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonClass.swift; sourceTree = "<group>"; };
+		937E8D56290ABAC60063F35B /* SoundOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundOption.swift; sourceTree = "<group>"; };
 		93F5236F2901760A00D3EE38 /* NumberCorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectView.swift; sourceTree = "<group>"; };
 		93F5237129017AF700D3EE38 /* GameButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonView.swift; sourceTree = "<group>"; };
 		93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCorrectModel.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				93F52378290186FE00D3EE38 /* ActivityItemModel.swift */,
 				933FAAA82902D6C7001858C9 /* SectionItemModel.swift */,
 				A4AC04C82901984C00510EDA /* playSound.swift */,
+				937E8D54290ABA5A0063F35B /* SoundButtonClass.swift */,
+				937E8D56290ABAC60063F35B /* SoundOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,12 +256,14 @@
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
+				937E8D55290ABA5A0063F35B /* SoundButtonClass.swift in Sources */,
 				935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				A4AC04C92901984C00510EDA /* playSound.swift in Sources */,
 				93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
+				937E8D57290ABAC60063F35B /* SoundOption.swift in Sources */,
 				93F5237529017FFE00D3EE38 /* NumberCorrectModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
