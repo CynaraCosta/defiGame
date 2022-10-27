@@ -10,57 +10,75 @@ import SwiftUI
 struct MemoryGameView: View {
     @State var timerRunning = false
     private var threeColumnGrid = [GridItem(.flexible()),
-                                  GridItem(.flexible()),
-                                  GridItem(.flexible()),
-                                ]
+                                   GridItem(.flexible()),
+                                   GridItem(.flexible()),
+    ]
     
-    
+    @State var confetti: Bool = false
+    @State var finishConfetti: Bool = false
+    @State var show = false
+    @State private var initPopUp = true
+    @State private var blurAmount: CGFloat = 32.0
+    @State private var textGame: String = "Jogo da memoria e tals blablabla."
     @State var cards = createCardList().shuffled()
     @State var MatchedCards = [Card]()
     @State var UserChoices = [Card]()
-
+    
     let timerTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var time: Int = 40
+    @State var time: Int = 0
     
     var body: some View{
         GeometryReader{geo in
-            ZStack{
-                
-                BackgroundView()
-                
-                VStack{
-                    
-                    HStack {
-                        Image(systemName: "star.fill")
-                            .foregroundColor(.white)
-                        Circle()
-                        //                                .foregroundColor(.white)
-                        //                                .font(.system(size: 40, weight: .semibold))
-                            .fill(.clear)
-                            .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
-                        
-                        //                        .modifier(AnimatingNumberOverlay(number: CGFloat(points)))
-                    }
-                    
-                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .white : ((time > 5) ? .yellow : .red))
-                        .animation(.spring())
-                        .offset(x: 0, y: -48)
-                    
-                    LazyVGrid(columns: threeColumnGrid, spacing: 20){
-                        ForEach(cards){card in
-                            MemoryCardView(card: card,
-                                           //width:(geo.size.width/4 - 10),
-                                           MatchedCards: $MatchedCards,
-                                           UserChoices: $UserChoices)
-//                             .padding(2)
-                            
-                            
-                        }
-                    }
-                    
-                }
-            }
             
+            if MatchedCards.count != 12 {
+                
+                ZStack{
+                    
+                    BackgroundView()
+                    
+                    VStack{
+                        
+                        HStack(spacing: 16) {
+                            Image(systemName: "clock.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: UIScreen.main.bounds.width*0.1, height: UIScreen.main.bounds.height*0.1)
+                                .foregroundColor(.white)
+                            
+                            Text("\(time)")
+                            
+                                .font(.system(size: 40, weight:.semibold))
+                                .foregroundColor(.white)
+                        }
+                        
+                        
+                        LazyVGrid(columns: threeColumnGrid, spacing: 20){
+                            ForEach(cards){card in
+                                MemoryCardView(card: card,
+                                               MatchedCards: $MatchedCards,
+                                               UserChoices: $UserChoices)
+                                
+                            }
+                        }
+                        
+                    }.blur(radius: blurAmount)
+                    InitPopUp(show: $initPopUp, blur: $blurAmount, timerRun: $timerRunning, textGame: $textGame)
+                    
+                }.onReceive(timerTimer){
+                    _ in
+                    if timerRunning {
+                        time+=1
+                    }
+                    if MatchedCards.count == 12{
+                        timerRunning = false
+                       
+                    }
+                }
+            } else {
+                
+                MemoryFinishView(time: $time)
+            }
+        
         }
     }
     

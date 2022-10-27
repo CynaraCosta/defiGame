@@ -28,10 +28,6 @@ let cardValues:[Image] = [
     Image("Alazao"), Image("Dogão"), Image("Gaturro"), Image("Pandoca"), Image("Piggo"), Image("Sapoide")
 ]
 
-//let cardValues:[String] = [
-//    "🐼", "🐸", "🐷", "🐱", "🐶", "🐴"
-//]
-
 
 func createCardList() -> [Card] {
     //criando lista em branco aqui

@@ -113,7 +113,7 @@ struct CardView: View {
     case 0: MaioraisVIew()
     case 1: MaioraisVIew()
     case 2: WheresTheNumberView(activities: SectionItemModel.initGameSolo().activities)
-    case 3: MaioraisVIew()
+    case 3: MemoryGameView()
     default: EmptyView()
     }
 }

@@ -37,6 +37,7 @@
 		EE473B10290827570091134C /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B0F290827570091134C /* MemoryGameView.swift */; };
 		EE473B1229082A3D0091134C /* MemoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B1129082A3D0091134C /* MemoryDetails.swift */; };
 		EE473B1429082A640091134C /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B1329082A640091134C /* MemoryCardView.swift */; };
+		EE473B16290AB4990091134C /* MemoryFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B15290AB4990091134C /* MemoryFinishView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		EE473B0F290827570091134C /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
 		EE473B1129082A3D0091134C /* MemoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDetails.swift; sourceTree = "<group>"; };
 		EE473B1329082A640091134C /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
+		EE473B15290AB4990091134C /* MemoryFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryFinishView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				EE473B0F290827570091134C /* MemoryGameView.swift */,
 				EE473B1329082A640091134C /* MemoryCardView.swift */,
 				A4AC04C52900D9B900510EDA /* FinishSoloView.swift */,
+				EE473B15290AB4990091134C /* MemoryFinishView.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
@@ -274,6 +277,7 @@
 				EE473B10290827570091134C /* MemoryGameView.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				EE473B1229082A3D0091134C /* MemoryDetails.swift in Sources */,
+				EE473B16290AB4990091134C /* MemoryFinishView.swift in Sources */,
 				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
 				A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */,
 				A4AC04D22906ACE800510EDA /* MaioraisDuoView.swift in Sources */,

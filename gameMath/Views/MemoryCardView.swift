@@ -11,13 +11,14 @@ struct MemoryCardView: View {
     
     @ObservedObject var card:Card
     let width: Int = 100
-    //
+  
     @Binding var MatchedCards: [Card]
     @Binding var UserChoices: [Card]
     
     var body: some View {
         if card.isFacedUp || MatchedCards.contains(where: {$0.id == card.id}){
             Text(card.text )
+                .multilineTextAlignment(.center)
                 .font(.system(size:50))
                 .padding()
                 .frame(width: CGFloat(width), height: CGFloat(width))
