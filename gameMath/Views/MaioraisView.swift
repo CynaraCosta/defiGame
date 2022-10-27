@@ -13,6 +13,9 @@ struct MaioraisVIew: View {
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 32.0
     @State private var textGame: String = "Selecionar o maior número disposta na tela."
+
+    
+    var initPoints = 0
     
 //    private var data: [Int] = Array(1...9)
 //    private var data: [Int] = [34, 56, 2, 78, 45, 98, 66, 74, 90]
@@ -54,7 +57,7 @@ struct MaioraisVIew: View {
                             .modifier(AnimatingNumberOverlay(number: CGFloat(points)))
                     }
                     
-                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .green : ((time > 5) ? .yellow : .red))
+                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .white : ((time > 5) ? .yellow : .red))
                         .animation(.spring())
                         .offset(x: 0, y: -48)
                     
@@ -69,12 +72,12 @@ struct MaioraisVIew: View {
                                     withAnimation {
                                         points += 10
                                     }
-                                    playSound(sound: "yeah")
+                                    playSound(sound: "hit")
                                     HapticManager.instance.impact(style: .light)
                                     
                                 } else {
                                     HapticManager.instance.notification(type: .error)
-                                    playSound(sound: "windows")
+                                    playSound(sound: "error")
                                 }
                                 
                                 
@@ -112,8 +115,10 @@ struct MaioraisVIew: View {
             .onReceive(timerTimer) { _ in
                 if time > 0 && timerRunning {
                     time -= 1
+                    
                 } else {
                     timerRunning = false
+                    
                 }
             }
             

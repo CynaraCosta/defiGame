@@ -46,7 +46,7 @@ struct ContentView: View {
                                 .cornerRadius(50)
                         }
 
-                        NavigationLink(destination: SelectGameView()){
+                        NavigationLink(destination: SelectGameDuoView()){
                             Text("Disputa")
                                 .fixedSize(horizontal: false, vertical: true)
                                 .foregroundColor(Color.black)

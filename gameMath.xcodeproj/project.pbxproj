@@ -17,6 +17,8 @@
 		93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F52376290182E400D3EE38 /* GameButtonModel.swift */; };
 		93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F52378290186FE00D3EE38 /* ActivityItemModel.swift */; };
 		93FD85AA28F4449A00F9238E /* SelectGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD85A928F4449A00F9238E /* SelectGameView.swift */; };
+		A40B796B290962A60076F5AC /* FinishDuoPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40B796A290962A60076F5AC /* FinishDuoPopUp.swift */; };
+		A40B7970290978170076F5AC /* Particles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40B796F290978170076F5AC /* Particles.swift */; };
 		A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1628EF922600DA2DA0 /* gameMathApp.swift */; };
 		A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4378D1828EF922600DA2DA0 /* ContentView.swift */; };
 		A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4378D1A28EF922900DA2DA0 /* Assets.xcassets */; };
@@ -28,10 +30,18 @@
 		A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C32900D2E000510EDA /* InitPopUpView.swift */; };
 		A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C52900D9B900510EDA /* FinishSoloView.swift */; };
 		A4AC04C92901984C00510EDA /* playSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04C82901984C00510EDA /* playSound.swift */; };
-		A4AC04CC290198C900510EDA /* yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AC04CB290198C900510EDA /* yeah.mp3 */; };
-		A4AC04CE29019E8000510EDA /* windows.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AC04CD29019E8000510EDA /* windows.mp3 */; };
 		A4AC04D02901A83400510EDA /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04CF2901A83400510EDA /* ProgressBar.swift */; };
+		A4AC04D22906ACE800510EDA /* MaioraisDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */; };
+		A4AC04D42906DA0C00510EDA /* FinishDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */; };
+		A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */; };
 		A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */; };
+		EE473B10290827570091134C /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B0F290827570091134C /* MemoryGameView.swift */; };
+		EE473B1229082A3D0091134C /* MemoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B1129082A3D0091134C /* MemoryDetails.swift */; };
+		EE473B1429082A640091134C /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B1329082A640091134C /* MemoryCardView.swift */; };
+		EE473B16290AB4990091134C /* MemoryFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE473B15290AB4990091134C /* MemoryFinishView.swift */; };
+		EE473B18290AD48F0091134C /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE473B17290AD48E0091134C /* hit.mp3 */; };
+		EE473B1A290AD62D0091134C /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE473B19290AD62D0091134C /* error.mp3 */; };
+		EE473B1C290AD8250091134C /* erro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE473B1B290AD8250091134C /* erro.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +55,8 @@
 		93F52376290182E400D3EE38 /* GameButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonModel.swift; sourceTree = "<group>"; };
 		93F52378290186FE00D3EE38 /* ActivityItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemModel.swift; sourceTree = "<group>"; };
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
+		A40B796A290962A60076F5AC /* FinishDuoPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoPopUp.swift; sourceTree = "<group>"; };
+		A40B796F290978170076F5AC /* Particles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particles.swift; sourceTree = "<group>"; };
 		A4378D1328EF922600DA2DA0 /* Défis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
 		A4378D1828EF922600DA2DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,10 +70,18 @@
 		A4AC04C32900D2E000510EDA /* InitPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitPopUpView.swift; sourceTree = "<group>"; };
 		A4AC04C52900D9B900510EDA /* FinishSoloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSoloView.swift; sourceTree = "<group>"; };
 		A4AC04C82901984C00510EDA /* playSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSound.swift; sourceTree = "<group>"; };
-		A4AC04CB290198C900510EDA /* yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yeah.mp3; sourceTree = "<group>"; };
-		A4AC04CD29019E8000510EDA /* windows.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = windows.mp3; sourceTree = "<group>"; };
 		A4AC04CF2901A83400510EDA /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisDuoView.swift; sourceTree = "<group>"; };
+		A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoView.swift; sourceTree = "<group>"; };
+		A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameDuoView.swift; sourceTree = "<group>"; };
 		A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaioraisView.swift; sourceTree = "<group>"; };
+		EE473B0F290827570091134C /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		EE473B1129082A3D0091134C /* MemoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDetails.swift; sourceTree = "<group>"; };
+		EE473B1329082A640091134C /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
+		EE473B15290AB4990091134C /* MemoryFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryFinishView.swift; sourceTree = "<group>"; };
+		EE473B17290AD48E0091134C /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
+		EE473B19290AD62D0091134C /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		EE473B1B290AD8250091134C /* erro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = erro.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +147,7 @@
 		A465ACF528F9983500517FCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE473B1129082A3D0091134C /* MemoryDetails.swift */,
 				A45A0D76290041AB0043D00A /* HapitcsModel.swift */,
 				A465ACF628F9984800517FCD /* ModelGame.swift */,
 				93F5237429017FFE00D3EE38 /* NumberCorrectModel.swift */,
@@ -134,8 +155,11 @@
 				93F52378290186FE00D3EE38 /* ActivityItemModel.swift */,
 				933FAAA82902D6C7001858C9 /* SectionItemModel.swift */,
 				A4AC04C82901984C00510EDA /* playSound.swift */,
+
 				937E8D58290ABFC50063F35B /* SoundButtonClass.swift */,
 				937E8D5A290AC0AB0063F35B /* SoundOptionEnum.swift */,
+
+
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,12 +177,23 @@
 			isa = PBXGroup;
 			children = (
 				A4AC04C32900D2E000510EDA /* InitPopUpView.swift */,
+				EE473B0F290827570091134C /* MemoryGameView.swift */,
+				EE473B1329082A640091134C /* MemoryCardView.swift */,
 				A4AC04C52900D9B900510EDA /* FinishSoloView.swift */,
+				EE473B15290AB4990091134C /* MemoryFinishView.swift */,
 				A4378D1828EF922600DA2DA0 /* ContentView.swift */,
 				A4EB4A9F28FED0B7002EB67D /* MaioraisView.swift */,
 				93FD85A928F4449A00F9238E /* SelectGameView.swift */,
 				935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */,
 				A4AC04CF2901A83400510EDA /* ProgressBar.swift */,
+
+
+				A4AC04D12906ACE800510EDA /* MaioraisDuoView.swift */,
+				A4AC04D32906DA0C00510EDA /* FinishDuoView.swift */,
+				A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */,
+				A40B796A290962A60076F5AC /* FinishDuoPopUp.swift */,
+				A40B796F290978170076F5AC /* Particles.swift */,
+
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,8 +201,9 @@
 		A4AC04CA290198BB00510EDA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A4AC04CB290198C900510EDA /* yeah.mp3 */,
-				A4AC04CD29019E8000510EDA /* windows.mp3 */,
+				EE473B17290AD48E0091134C /* hit.mp3 */,
+				EE473B19290AD62D0091134C /* error.mp3 */,
+				EE473B1B290AD8250091134C /* erro.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -188,6 +224,8 @@
 			dependencies = (
 			);
 			name = gameMath;
+			packageProductDependencies = (
+			);
 			productName = gameMath;
 			productReference = A4378D1328EF922600DA2DA0 /* Défis.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +254,8 @@
 				Base,
 			);
 			mainGroup = A4378D0A28EF922600DA2DA0;
+			packageReferences = (
+			);
 			productRefGroup = A4378D1428EF922600DA2DA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,10 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4378D1E28EF922900DA2DA0 /* Preview Assets.xcassets in Resources */,
-				A4AC04CE29019E8000510EDA /* windows.mp3 in Resources */,
-				A4AC04CC290198C900510EDA /* yeah.mp3 in Resources */,
+				EE473B1A290AD62D0091134C /* error.mp3 in Resources */,
+				EE473B1C290AD8250091134C /* erro.mp3 in Resources */,
 				A4AC04BF290092B700510EDA /* Sacramento-Regular.ttf in Resources */,
 				A4378D1B28EF922900DA2DA0 /* Assets.xcassets in Resources */,
+				EE473B18290AD48F0091134C /* hit.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,16 +293,29 @@
 				A4AC04C22900939700510EDA /* FontsManager.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
 				93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */,
+				A4AC04D42906DA0C00510EDA /* FinishDuoView.swift in Sources */,
 				A4378D1928EF922600DA2DA0 /* ContentView.swift in Sources */,
+				A40B7970290978170076F5AC /* Particles.swift in Sources */,
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
+				EE473B10290827570091134C /* MemoryGameView.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
+
 				937E8D59290ABFC50063F35B /* SoundButtonClass.swift in Sources */,
+
+				EE473B1229082A3D0091134C /* MemoryDetails.swift in Sources */,
+				EE473B16290AB4990091134C /* MemoryFinishView.swift in Sources */,
+				939870B228FECEE2003618FF /* AnswerButton.swift in Sources */,
+				A4AC04D62906DC1A00510EDA /* SelectGameDuoView.swift in Sources */,
+				A4AC04D22906ACE800510EDA /* MaioraisDuoView.swift in Sources */,
+
 				935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
 				A4AC04C92901984C00510EDA /* playSound.swift in Sources */,
+				EE473B1429082A640091134C /* MemoryCardView.swift in Sources */,
 				93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */,
+				A40B796B290962A60076F5AC /* FinishDuoPopUp.swift in Sources */,
 				A4378D1728EF922600DA2DA0 /* gameMathApp.swift in Sources */,
 				93F5237529017FFE00D3EE38 /* NumberCorrectModel.swift in Sources */,
 				937E8D5B290AC0AB0063F35B /* SoundOptionEnum.swift in Sources */,
@@ -400,8 +454,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,8 +484,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

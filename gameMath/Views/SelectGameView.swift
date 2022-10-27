@@ -17,7 +17,7 @@ struct DestinationView: View {
         Text("Jogo \(game)")
         
         //        .sheet(isPresented: $isPresenting, content: {
-        //            SelectGameView()
+        //            SelectGameView() 
         //    })
     }
 }
@@ -33,7 +33,13 @@ struct SelectGameView: View {
         ZStack {
             BackgroundViewSelectGameView()
             
-            VStack {
+            VStack (spacing: 32){
+                
+                Text("Selecione um dos mini jogos abaixo!")
+//                    .offset(x: 0, y: -40)
+                    .font(.system(size: 20, weight: .semibold))
+                    .foregroundColor(.white)
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 20) {
                         ForEach(gamesViewModel.games) { game in
@@ -50,7 +56,7 @@ struct SelectGameView: View {
                     }
                 }
                 .padding(.horizontal)
-                    .offset(x: 0, y: -40)
+//                    .offset(x: 0, y: -40)
                 
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.65, alignment: .center)
 
@@ -113,7 +119,7 @@ struct CardView: View {
     case 0: MaioraisVIew()
     case 1: MaioraisVIew()
     case 2: WheresTheNumberView(activities: SectionItemModel.initGameSolo().activities)
-    case 3: MaioraisVIew()
+    case 3: MemoryGameView()
     default: EmptyView()
     }
 }
