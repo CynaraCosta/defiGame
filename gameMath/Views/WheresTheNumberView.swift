@@ -9,6 +9,11 @@ import SwiftUI
 
 struct WheresTheNumberView: View {
     
+    @State private var blurAmount: CGFloat = 32.0
+    @State var timerRunning = false
+    @State private var initPopUp = true
+    @State private var textGame: String = "Selecione o número que está escrito na tela."
+    
     @Environment(\.presentationMode) var presentationMode
     
     let activities: [ActivityItemModel]
@@ -33,7 +38,7 @@ struct WheresTheNumberView: View {
         ZStack {
             CadeONumeroBackgroundView()
             
-            VStack (spacing: 90){
+            VStack (spacing: 90) {
                 LazyVGrid(columns: [
                     GridItem(.adaptive(minimum: 9000))
                 ],
@@ -63,7 +68,9 @@ struct WheresTheNumberView: View {
                     }
                 }
                 
-            }
+            }.blur(radius: blurAmount)
+            
+            InitPopUp(show: $initPopUp, blur: $blurAmount, timerRun: $timerRunning, textGame: $textGame)
             
             
         }

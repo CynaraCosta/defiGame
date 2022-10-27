@@ -28,7 +28,7 @@ struct NumberCorrectView: View {
             }, label: {Text(self.textButton.uppercased())
                     .padding(0)
                     .font(.system(size: 20, weight: .medium))
-                    .frame(width: 267, height: 40 , alignment: .center)
+                    .frame(width: 300, height: 50, alignment: .center)
                     .background(self.buttonColor)
                     .foregroundColor(textColor)
                     .clipShape(RoundedRectangle(cornerRadius: 4))
