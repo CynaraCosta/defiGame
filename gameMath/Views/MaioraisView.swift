@@ -69,12 +69,12 @@ struct MaioraisVIew: View {
                                     withAnimation {
                                         points += 10
                                     }
-                                    playSound(sound: "yeah")
+                                    playSound(sound: "hit")
                                     HapticManager.instance.impact(style: .light)
                                     
                                 } else {
                                     HapticManager.instance.notification(type: .error)
-                                    playSound(sound: "windows")
+                                    playSound(sound: "error")
                                 }
                                 
                                 
