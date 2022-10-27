@@ -14,8 +14,6 @@ struct MemoryGameView: View {
                                    GridItem(.flexible()),
     ]
     
-    @State var confetti: Bool = false
-    @State var finishConfetti: Bool = false
     @State var show = false
     @State private var initPopUp = true
     @State private var blurAmount: CGFloat = 32.0
@@ -71,16 +69,18 @@ struct MemoryGameView: View {
                     }
                     if MatchedCards.count == 12{
                         timerRunning = false
-                       
+                        
                     }
                 }
             } else {
                 
                 MemoryFinishView(time: $time)
+                
             }
-        
+            
         }
     }
+   
     
 }
 

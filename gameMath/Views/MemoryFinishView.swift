@@ -11,6 +11,8 @@ import SwiftUI
 struct MemoryFinishView: View {
     
     @Binding var time: Int
+    @State var confetti: Bool = false
+    @State var finishConfetti: Bool = false
     
     var body: some View {
         
@@ -78,9 +80,29 @@ struct MemoryFinishView: View {
                 
             }
             
+            EmitterView()
+                                        .scaleEffect(confetti ? 1 : 0, anchor: .top)
+                                        .opacity(confetti && !finishConfetti ? 1 : 0)
+                                        .ignoresSafeArea()
             
+            
+        }.onAppear{
+            doConfetti()
         }
         
     }
+    
+    func doConfetti(){
+            withAnimation(.spring()) {
+                confetti = true
+            }
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation(.easeInOut(duration: 1)){
+                    finishConfetti = true
+                }
+            }
+
+        }
 }
 
