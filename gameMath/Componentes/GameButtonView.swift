@@ -9,10 +9,10 @@ import SwiftUI
 
 struct GameButtonView: View {
     
-
+    
     @State var buttonClicked = false
     
-    var sound: String
+    let sound: SoundOption
     var textButton: String
     let buttonColor: Color
     let textColor: Color
@@ -23,7 +23,7 @@ struct GameButtonView: View {
     init(textButton: String,
          buttonColor: Color,
          textColor: Color,
-         sound: String,
+         sound: SoundOption,
          buttonActive: Bool = false,
          changedListActivityIndex: @escaping () -> Void
     ){
@@ -40,6 +40,9 @@ struct GameButtonView: View {
         VStack {
             Button(action: {
                 
+                
+                SoundManager.instance.playSound(sound: self.sound)
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     if buttonActive {
                         self.changeListActivityIndex();
@@ -50,7 +53,10 @@ struct GameButtonView: View {
                 buttonClicked = true
                 buttonClicked = false
                 
-   
+                
+                
+                
+                
                 
                 
             }, label: {Text(self.textButton.uppercased())
@@ -76,7 +82,7 @@ struct GameButtonView_Previews: PreviewProvider {
             textButton: "12",
             buttonColor: Color("GrayFullWhite"),
             textColor: Color("Blue1000"),
-            sound: "yeah",
+            sound: SoundOption.yeah,
             changedListActivityIndex: { print("mudou index")
             })
     }

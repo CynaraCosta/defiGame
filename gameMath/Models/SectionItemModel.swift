@@ -25,15 +25,15 @@ class SectionItemModel {
         ]
         
         let exerciceButtonsOne: [GameButtonModel] = [
-            GameButtonModel(syllable: "12", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "yeah", isCorrect: true),
-            GameButtonModel(syllable: "29", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "64", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "13", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "1", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "10", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"),sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "34", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "92", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "88", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false)
+            GameButtonModel(syllable: "12", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: true),
+            GameButtonModel(syllable: "29", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "64", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "13", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "1", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "10", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"),sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "34", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "92", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "88", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false)
         ]
         
         let exerciceOne: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsOne, numberCorrect: exerciceCorrectOne)
@@ -46,15 +46,15 @@ class SectionItemModel {
         
         //botoes para advinhar
         let exerciceButtonsTwo: [GameButtonModel] = [
-            GameButtonModel(syllable: "10", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "23", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "94", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "65", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "40", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "yeah", isCorrect: true),
-            GameButtonModel(syllable: "34", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "21", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "9", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false)
+            GameButtonModel(syllable: "10", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "23", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "94", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "65", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound:SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "40", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.yeah, isCorrect: true),
+            GameButtonModel(syllable: "34", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "21", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "9", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false)
         ]
         
         let exerciceTwo: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsTwo, numberCorrect: exerciceCorrectTwo)
@@ -66,15 +66,15 @@ class SectionItemModel {
         ]
         
         let exerciceButtonsThree: [GameButtonModel] = [
-            GameButtonModel(syllable: "99", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound:"windows", isCorrect: false),
-            GameButtonModel(syllable: "30", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "20", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "yeah", isCorrect: true),
-            GameButtonModel(syllable: "17", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "40", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "24", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "31", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "48", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false)
+            GameButtonModel(syllable: "99", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "30", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "20", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.yeah, isCorrect: true),
+            GameButtonModel(syllable: "17", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "40", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "24", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "31", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "48", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false)
         ]
         
         let exerciceThree: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsThree, numberCorrect: exerciceCorrectThree)
@@ -86,15 +86,15 @@ class SectionItemModel {
         ]
         
         let exerciceButtonsFour: [GameButtonModel] = [
-            GameButtonModel(syllable: "98", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "34", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "67", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "71", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "62", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "46", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "54", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "61", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "50", buttonColor:Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "yeah", isCorrect: true)
+            GameButtonModel(syllable: "98", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "34", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "67", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "71", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "62", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "46", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "54", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "61", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "50", buttonColor:Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.yeah, isCorrect: true)
         ]
         
         let exerciceFour: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsFour, numberCorrect: exerciceCorrectFour)
@@ -106,15 +106,15 @@ class SectionItemModel {
         ]
         
         let exerciceButtonsFive: [GameButtonModel] = [
-            GameButtonModel(syllable: "76", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "43", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "76", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "15", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "26", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "80", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "yeah", isCorrect: true),
-            GameButtonModel(syllable: "35", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false),
-            GameButtonModel(syllable: "12", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: "windows", isCorrect: false)
+            GameButtonModel(syllable: "76", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "43", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "76", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "15", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "26", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "80", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.yeah, isCorrect: true),
+            GameButtonModel(syllable: "35", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "16", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false),
+            GameButtonModel(syllable: "12", buttonColor: Color("GrayFullWhite"), textColor: Color("Blue1000"), sound: SoundOption.windows, isCorrect: false)
         ]
         
         let exerciceFive: ActivityItemModel = ActivityItemModel(gameButton: exerciceButtonsFive, numberCorrect: exerciceCorrectFive)

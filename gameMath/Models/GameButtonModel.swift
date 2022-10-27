@@ -11,13 +11,13 @@ import SwiftUI
 class GameButtonModel: Hashable {
     let id: UUID
     let syllable: String
-    let sound: String
     let buttonColor: Color
     let textColor: Color
+    let sound: SoundOption
     let isCorrect: Bool
     
     
-    init(syllable: String, buttonColor: Color, textColor: Color, sound: String, isCorrect: Bool) {
+    init(syllable: String, buttonColor: Color, textColor: Color, sound: SoundOption, isCorrect: Bool) {
         self.id = UUID()
         self.syllable = syllable
         self.textColor = textColor

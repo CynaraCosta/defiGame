@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-import AVFAudio
-
+import AVKit
 
 class SoundManager {
     
@@ -26,6 +25,7 @@ class SoundManager {
             print("Error  playing sound. \(error.localizedDescription)")
         }
     }
+    
     
     
     struct SoundButtonClass: View {
