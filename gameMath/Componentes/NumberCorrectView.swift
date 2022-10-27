@@ -25,11 +25,12 @@ struct NumberCorrectView: View {
         VStack {
             Button(action: {
                 
-            }, label: {Text(self.textButton.uppercased()).bold()
+            }, label: {Text(self.textButton.uppercased())
                     .padding(0)
-                    .font(.system(size: 20, weight: .bold))
+                    .font(.system(size: 20, weight: .medium))
                     .frame(width: 267, height: 40 , alignment: .center)
                     .background(self.buttonColor)
+                    .foregroundColor(textColor)
                     .clipShape(RoundedRectangle(cornerRadius: 4))
                     .multilineTextAlignment(.center)
                 

@@ -29,40 +29,45 @@ struct WheresTheNumberView: View {
     
     
     var body: some View {
+        
         ZStack {
             CadeONumeroBackgroundView()
             
-            LazyVGrid(columns: [
-                GridItem(.adaptive(minimum: 9000))
-            ],
-                      spacing: 0) {
-                ForEach(activities[activityIndex].numberCorrect, id: \.id ) {
-                    numberCorrect in
-                    NumberCorrectView(
-                        textButton: numberCorrect.syllable ,
-                        toGuess: numberCorrect.toGuess)
+            VStack (spacing: 90){
+                LazyVGrid(columns: [
+                    GridItem(.adaptive(minimum: 9000))
+                ],
+                          spacing: 0) {
+                    ForEach(activities[activityIndex].numberCorrect, id: \.id ) {
+                        numberCorrect in
+                        NumberCorrectView(
+                            textButton: numberCorrect.syllable ,
+                            toGuess: numberCorrect.toGuess)
+                    }
                 }
+                
+                
+                LazyVGrid(columns: [
+                    GridItem(.adaptive(minimum: 100))
+                ],
+                          spacing: 20) {
+                    ForEach(activities[activityIndex].gameButton, id: \.id ) {
+                        gameButton in
+                        GameButtonView(
+                            textButton: gameButton.syllable,
+                            buttonColor: gameButton.buttonColor,
+                            textColor: gameButton.textColor,
+                            buttonActive: gameButton.isCorrect,
+                            changedListActivityIndex: self.changeListActivityIndex
+                        )
+                    }
+                }
+                
             }
             
-//
-//            LazyVGrid(columns: [
-//                GridItem(.adaptive(minimum: 100))
-//            ],
-//                      spacing: 20) {
-//                ForEach(activities[activityIndex].gameButton, id: \.id ) {
-//                    gameButton in
-//                    GameButtonView(
-//                        textButton: gameButton.syllable,
-//                        buttonColor: gameButton.buttonColor,
-//                        textColor: gameButton.textColor,
-//                        buttonActive: gameButton.isCorrect,
-//                        changedListActivityIndex: self.changeListActivityIndex
-//                    )
-//                }
-//            }
-//
             
         }
+        
         
         
     }
