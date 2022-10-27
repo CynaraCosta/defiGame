@@ -15,8 +15,8 @@ struct NumberCorrectView: View {
     
     init(textButton: String, toGuess: Bool){
         self.textButton = textButton
-        self.buttonColor = toGuess ? Color("Aqua") : Color("Aqua100")
-        self.textColor = toGuess ? Color("Aqua") : Color("Aqua100")
+        self.buttonColor = toGuess ? Color("GrayFullWhite") : Color("GrayFullWhite")
+        self.textColor = toGuess ? Color("Ocean") : Color("Ocean")
     }
     
     
