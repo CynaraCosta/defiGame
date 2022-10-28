@@ -17,6 +17,7 @@ struct GameButtonView: View {
     let buttonColor: Color
     let textColor: Color
     let buttonActive: Bool
+    let onTap: () -> Void
     let changeListActivityIndex: () -> Void
     
     
@@ -25,6 +26,7 @@ struct GameButtonView: View {
          textColor: Color,
          sound: SoundOption,
          buttonActive: Bool = false,
+         onTap: @escaping () -> Void,
          changedListActivityIndex: @escaping () -> Void
     ){
         self.textButton = textButton
@@ -32,6 +34,7 @@ struct GameButtonView: View {
         self.textColor = textColor
         self.sound = sound
         self.buttonActive = buttonActive
+        self.onTap = onTap
         self.changeListActivityIndex = changedListActivityIndex
     }
     
@@ -39,9 +42,10 @@ struct GameButtonView: View {
     var body: some View {
         VStack {
             Button(action: {
-                
+      
                 if buttonActive == true {
                     HapticManager.instance.impact(style: .light)
+                    onTap()
                     
                 } else {
                     HapticManager.instance.notification(type: .error)
@@ -82,7 +86,10 @@ struct GameButtonView_Previews: PreviewProvider {
             buttonColor: Color("GrayFullWhite"),
             textColor: Color("Blue1000"),
             sound: SoundOption.yeah,
+            onTap: {print ("clicouu")
+            },
             changedListActivityIndex: { print("mudou index")
-            })
-    }
+            }
+            
+        )}
 }
