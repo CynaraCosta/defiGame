@@ -13,6 +13,9 @@ struct WheresTheNumberView: View {
     @State var timerRunning = false
     @State private var initPopUp = true
     @State private var textGame: String = "Selecione o número que está escrito na tela."
+    @State private var points = 0
+    
+    var initPoints = 0
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -46,14 +49,20 @@ struct WheresTheNumberView: View {
                 
                 VStack (spacing: 40) {
                     
+           
                     HStack {
                         Image(systemName: "star.fill")
                             .foregroundColor(.white)
                         Circle()
-
+                        //                                .foregroundColor(.white)
+                        //                                .font(.system(size: 40, weight: .semibold))
                             .fill(.clear)
                             .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
+                        
+                            .modifier(AnimatingNumberOverlay(number: CGFloat(points)))
                     }
+                    
+                    
                     
                     ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .white : ((time > 5) ? .yellow : .red))
                         .animation(.spring())
@@ -86,6 +95,12 @@ struct WheresTheNumberView: View {
                                 textColor: gameButton.textColor,
                                 sound: gameButton.sound,
                                 buttonActive: gameButton.isCorrect,
+                                onTap: {
+                                    withAnimation {
+                                        points += 10
+                                    }
+                                    
+                                },
                                 changedListActivityIndex: self.changeListActivityIndex
                             )
                         }
@@ -108,9 +123,10 @@ struct WheresTheNumberView: View {
             
         } else {
             
-//                        withAnimation {
-//                            GameButtonView(textButton: <#String#>, buttonColor: <#Color#>, textColor: <#Color#>, changedListActivityIndex: <#() -> Void#>)
-//                        }
+            withAnimation {
+                FinishSoloView(points: $points)
+                
+            }
             
         }
         
@@ -130,9 +146,6 @@ struct CadeONumeroBackgroundView: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
-
-
-
 
 
 
