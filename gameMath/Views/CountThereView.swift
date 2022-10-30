@@ -9,6 +9,11 @@ import SwiftUI
 
 struct CountThereView: View {
     
+    @State var timerRunning = false
+    @State private var initPopUp = true
+    @State private var blurAmount: CGFloat = 32.0
+    @State private var textGame: String = "Ache o resultado da expressão."
+    
     @State var score : Int = 0
     @State var operatorOne : Int = 50
     @State var operatorTwo : Int = 35
@@ -20,6 +25,9 @@ struct CountThereView: View {
     @State var answer2 = 49
     @State var answer3 = 10
     @State var answer4 = 85
+    
+    let timerTimer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    @State var time: Float = 40.0
     
     
     
@@ -38,110 +46,132 @@ struct CountThereView: View {
     
     
     var body: some View {
-        ZStack {
-            MaioraisBackgroundView()
-            VStack {
-                HStack {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.white)
-                    Text(String(score))
-                        .foregroundColor(.white)
-                }
-                Spacer()
-                    .frame(height: 30)
-                ProgressBar()
-                Spacer()
-                    .frame(height: 50)
-                HStack {
-                    Text(String(operatorOne))
+        if time > 0 {
+            ZStack {
+                MaioraisBackgroundView()
+                VStack {
+                    HStack {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.white)
+                        Text(String(score))
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                        .frame(height: 30)
+                    ProgressBar(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.03, percent: CGFloat(time), color: time > 20 ? .white : ((time > 5) ? .yellow : .red))
+                        .animation(.spring())
+                    Spacer()
+                        .frame(height: 50)
+                    HStack {
+                        Text(String(operatorOne))
+                            .foregroundColor(buttonTextColor)
+                        Text(signal)
+                            .foregroundColor(buttonTextColor)
+                        Text(String(operatorTwo))
+                            .foregroundColor(buttonTextColor)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.85, height: UIScreen.main.bounds.height * 0.105)
+                    .background(buttonBGColor)
+                    .cornerRadius(8)
+                    .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius)
+                        .stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    HStack {
+                        Button (String(answer1)) {
+                            receiveAnswer(givenAnswer: answer1)
+                            refreshData()
+                        }
+                        .frame(width: UIScreen.main
+                            .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
+                        .background(buttonBGColor)
                         .foregroundColor(buttonTextColor)
-                    Text(signal)
+                        .cornerRadius(buttonCornerRadius)
+                        .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
+                        Spacer()
+                        Rectangle()
+                            .frame(width: lineThickness, height: UIScreen.main.bounds.height * buttonHeight)
+                            .foregroundColor(lineColor)
+                        Spacer()
+                        Button (String(answer2)) {
+                            receiveAnswer(givenAnswer: answer2)
+                            refreshData()
+                        }
+                        .frame(width: UIScreen.main
+                            .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
+                        .background(buttonBGColor)
                         .foregroundColor(buttonTextColor)
-                    Text(String(operatorTwo))
+                        .cornerRadius(buttonCornerRadius)
+                        .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
+
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.85)
+                    
+                    HStack {
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width * buttonWidth, height: lineThickness)
+                            .foregroundColor(lineColor)
+                        Spacer()
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width * buttonWidth, height: lineThickness)
+                            .foregroundColor(lineColor)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.85)
+                    HStack {
+                        Button (String(answer3)) {
+                            receiveAnswer(givenAnswer: answer3)
+                            refreshData()
+                        }
+                        .frame(width: UIScreen.main
+                            .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
+                        .background(buttonBGColor)
                         .foregroundColor(buttonTextColor)
-                }
-                .frame(width: UIScreen.main.bounds.width * 0.85, height: UIScreen.main.bounds.height * 0.105)
-                .background(buttonBGColor)
-                .cornerRadius(8)
-                .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius)
-                    .stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
-                Spacer()
-                    .frame(height: 50)
-                
-                HStack {
-                    Button (String(answer1)) {
-                        receiveAnswer(givenAnswer: answer1)
-                        refreshData()
-                    }
-                    .frame(width: UIScreen.main
-                        .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
-                    .background(buttonBGColor)
-                    .foregroundColor(buttonTextColor)
-                    .cornerRadius(buttonCornerRadius)
-                    .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
-                    Spacer()
-                    Rectangle()
-                        .frame(width: lineThickness, height: UIScreen.main.bounds.height * buttonHeight)
-                        .foregroundColor(lineColor)
-                    Spacer()
-                    Button (String(answer2)) {
-                        receiveAnswer(givenAnswer: answer2)
-                        refreshData()
-                    }
-                    .frame(width: UIScreen.main
-                        .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
-                    .background(buttonBGColor)
-                    .foregroundColor(buttonTextColor)
-                    .cornerRadius(buttonCornerRadius)
-                    .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
+                        .cornerRadius(buttonCornerRadius)
+                        .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
+                        Spacer()
 
-                }
-                .frame(width: UIScreen.main.bounds.width * 0.85)
-                
-                HStack {
-                    Rectangle()
-                        .frame(width: UIScreen.main.bounds.width * buttonWidth, height: lineThickness)
-                        .foregroundColor(lineColor)
-                    Spacer()
-                    Rectangle()
-                        .frame(width: UIScreen.main.bounds.width * buttonWidth, height: lineThickness)
-                        .foregroundColor(lineColor)
-                }
-                .frame(width: UIScreen.main.bounds.width * 0.85)
-                HStack {
-                    Button (String(answer3)) {
-                        receiveAnswer(givenAnswer: answer3)
-                        refreshData()
-                    }
-                    .frame(width: UIScreen.main
-                        .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
-                    .background(buttonBGColor)
-                    .foregroundColor(buttonTextColor)
-                    .cornerRadius(buttonCornerRadius)
-                    .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
-                    Spacer()
+                        Rectangle()
+                            .frame(width: lineThickness, height: UIScreen.main.bounds.height * buttonHeight)
+                            .foregroundColor(.white)
+                        Spacer()
+                        Button (String(answer4)) {
+                            receiveAnswer(givenAnswer: answer4)
+                            refreshData()
+                        }
+                        .frame(width: UIScreen.main
+                            .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
+                        .background(buttonBGColor)
+                        .foregroundColor(buttonTextColor)
+                        .cornerRadius(buttonCornerRadius)
+                        .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
 
-                    Rectangle()
-                        .frame(width: lineThickness, height: UIScreen.main.bounds.height * buttonHeight)
-                        .foregroundColor(.white)
-                    Spacer()
-                    Button (String(answer4)) {
-                        receiveAnswer(givenAnswer: answer4)
-                        refreshData()
                     }
-                    .frame(width: UIScreen.main
-                        .bounds.width * buttonWidth, height: UIScreen.main.bounds.height * buttonHeight)
-                    .background(buttonBGColor)
-                    .foregroundColor(buttonTextColor)
-                    .cornerRadius(buttonCornerRadius)
-                    .overlay(RoundedRectangle(cornerRadius: buttonCornerRadius).stroke(buttonBorderColor, lineWidth: buttonBorderThickness))
-
+                    .frame(width: UIScreen.main.bounds.width * 0.85)
+                    Spacer()
                 }
-                .frame(width: UIScreen.main.bounds.width * 0.85)
-                Spacer()
+                .frame(width: .infinity, height: .infinity)
+                .blur(radius: blurAmount)
+                InitPopUp(show: $initPopUp, blur: $blurAmount, timerRun: $timerRunning, textGame: $textGame)
             }
-            .frame(width: .infinity, height: .infinity)
+            .onReceive(timerTimer) { _ in
+                if time > 0 && timerRunning {
+                    time -= 0.1
+                    
+                } else {
+                    timerRunning = false
+                    
+                }
+            }
+            .onAppear() {
+                refreshData()
+            }
+        } else {
+            withAnimation {
+                FinishSoloView(points: $score)
+            }
         }
+        
     }
     
     func refreshData() {
@@ -221,6 +251,11 @@ struct CountThereView: View {
     func receiveAnswer (givenAnswer: Int) {
         if givenAnswer == rightAnswer {
             score += 1
+            playSound(sound: "hit")
+            HapticManager.instance.impact(style: .light)
+        } else {
+            playSound(sound: "error")
+            HapticManager.instance.impact(style: .light)
         }
     }
 }
