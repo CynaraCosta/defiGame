@@ -55,10 +55,10 @@ struct SelectGameDuoView: View {
 
 @ViewBuilder func getGameDuoView(game: Game) -> some View {
     switch game.id {
-    case 0: MaioraisDuoView()
+    case 0: CountThereDuoView()
     case 1: MaioraisDuoView()
-    case 2: MaioraisDuoView()
-    case 3: MaioraisDuoView()
+    case 2: WheresTheNumberDuoView()
+    case 3: MemoryGameDuoView()
     default: EmptyView()
     }
 }
