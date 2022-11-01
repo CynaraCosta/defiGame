@@ -150,7 +150,3 @@ struct SelectGameView_Previews: PreviewProvider {
     }
 }
 
-//
-//NavigationView {
-//    SelectGameView()
-//}
