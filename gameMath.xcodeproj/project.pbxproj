@@ -10,6 +10,15 @@
 		64863D4B290C4C5A0069F8C7 /* CountThereDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64863D4A290C4C5A0069F8C7 /* CountThereDuoView.swift */; };
 		64863D4D290C4DA40069F8C7 /* CountThereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64863D4C290C4DA40069F8C7 /* CountThereView.swift */; };
 		64863D4F290D990F0069F8C7 /* WheresTheNumberDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64863D4E290D990F0069F8C7 /* WheresTheNumberDuoView.swift */; };
+		64D6265C29103FE100F28961 /* MemoryGameDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6265B29103FE100F28961 /* MemoryGameDuoView.swift */; };
+		64D6265E291044C300F28961 /* InitPopUpMCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6265D291044C300F28961 /* InitPopUpMCDView.swift */; };
+		64D62660291049EE00F28961 /* MemoryCardDuoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6265F291049EE00F28961 /* MemoryCardDuoView.swift */; };
+		64D6266229105DE900F28961 /* FinishSoloCountThereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6266129105DE900F28961 /* FinishSoloCountThereView.swift */; };
+		64D6266429106B5700F28961 /* MemoryCardDuoBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6266329106B5700F28961 /* MemoryCardDuoBottomView.swift */; };
+		64D626662910A8EF00F28961 /* ProgressBarDuo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D626652910A8EF00F28961 /* ProgressBarDuo.swift */; };
+		64D6266A2910C44900F28961 /* FinishDuoCountThereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D626692910C44900F28961 /* FinishDuoCountThereView.swift */; };
+		64D6266C2910DF2000F28961 /* FinishDuoWheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6266B2910DF2000F28961 /* FinishDuoWheresTheNumberView.swift */; };
+		64D6266E2910E4A300F28961 /* FinishMCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6266D2910E4A300F28961 /* FinishMCDView.swift */; };
 		933FAAA92902D6C7001858C9 /* SectionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933FAAA82902D6C7001858C9 /* SectionItemModel.swift */; };
 		935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */; };
 		937E8D59290ABFC50063F35B /* SoundButtonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E8D58290ABFC50063F35B /* SoundButtonClass.swift */; };
@@ -51,6 +60,15 @@
 		64863D4A290C4C5A0069F8C7 /* CountThereDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountThereDuoView.swift; sourceTree = "<group>"; };
 		64863D4C290C4DA40069F8C7 /* CountThereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountThereView.swift; sourceTree = "<group>"; };
 		64863D4E290D990F0069F8C7 /* WheresTheNumberDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberDuoView.swift; sourceTree = "<group>"; };
+		64D6265B29103FE100F28961 /* MemoryGameDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameDuoView.swift; sourceTree = "<group>"; };
+		64D6265D291044C300F28961 /* InitPopUpMCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitPopUpMCDView.swift; sourceTree = "<group>"; };
+		64D6265F291049EE00F28961 /* MemoryCardDuoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardDuoView.swift; sourceTree = "<group>"; };
+		64D6266129105DE900F28961 /* FinishSoloCountThereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSoloCountThereView.swift; sourceTree = "<group>"; };
+		64D6266329106B5700F28961 /* MemoryCardDuoBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardDuoBottomView.swift; sourceTree = "<group>"; };
+		64D626652910A8EF00F28961 /* ProgressBarDuo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarDuo.swift; sourceTree = "<group>"; };
+		64D626692910C44900F28961 /* FinishDuoCountThereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoCountThereView.swift; sourceTree = "<group>"; };
+		64D6266B2910DF2000F28961 /* FinishDuoWheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoWheresTheNumberView.swift; sourceTree = "<group>"; };
+		64D6266D2910E4A300F28961 /* FinishMCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishMCDView.swift; sourceTree = "<group>"; };
 		933FAAA82902D6C7001858C9 /* SectionItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemModel.swift; sourceTree = "<group>"; };
 		935F65AC2906BC6E002E045B /* WheresTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheresTheNumberView.swift; sourceTree = "<group>"; };
 		937E8D58290ABFC50063F35B /* SoundButtonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonClass.swift; sourceTree = "<group>"; };
@@ -194,9 +212,18 @@
 				A4AC04D52906DC1A00510EDA /* SelectGameDuoView.swift */,
 				A40B796A290962A60076F5AC /* FinishDuoPopUp.swift */,
 				A40B796F290978170076F5AC /* Particles.swift */,
+				64D626652910A8EF00F28961 /* ProgressBarDuo.swift */,
+				64D6265D291044C300F28961 /* InitPopUpMCDView.swift */,
+				64D6265B29103FE100F28961 /* MemoryGameDuoView.swift */,
+				64D6265F291049EE00F28961 /* MemoryCardDuoView.swift */,
+				64D6266329106B5700F28961 /* MemoryCardDuoBottomView.swift */,
+				64D6266D2910E4A300F28961 /* FinishMCDView.swift */,
 				64863D4A290C4C5A0069F8C7 /* CountThereDuoView.swift */,
+				64D626692910C44900F28961 /* FinishDuoCountThereView.swift */,
 				64863D4C290C4DA40069F8C7 /* CountThereView.swift */,
+				64D6266129105DE900F28961 /* FinishSoloCountThereView.swift */,
 				64863D4E290D990F0069F8C7 /* WheresTheNumberDuoView.swift */,
+				64D6266B2910DF2000F28961 /* FinishDuoWheresTheNumberView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,8 +320,12 @@
 				A4AC04D02901A83400510EDA /* ProgressBar.swift in Sources */,
 				A4EB4AA028FED0B7002EB67D /* MaioraisView.swift in Sources */,
 				933FAAA92902D6C7001858C9 /* SectionItemModel.swift in Sources */,
+				64D62660291049EE00F28961 /* MemoryCardDuoView.swift in Sources */,
 				A4AC04C22900939700510EDA /* FontsManager.swift in Sources */,
+				64D6266429106B5700F28961 /* MemoryCardDuoBottomView.swift in Sources */,
 				A465ACF728F9984800517FCD /* ModelGame.swift in Sources */,
+				64D6265E291044C300F28961 /* InitPopUpMCDView.swift in Sources */,
+				64D6265C29103FE100F28961 /* MemoryGameDuoView.swift in Sources */,
 				93F5237229017AF700D3EE38 /* GameButtonView.swift in Sources */,
 				A4AC04D42906DA0C00510EDA /* FinishDuoView.swift in Sources */,
 				64863D4D290C4DA40069F8C7 /* CountThereView.swift in Sources */,
@@ -302,6 +333,8 @@
 				A40B7970290978170076F5AC /* Particles.swift in Sources */,
 				93F523702901760A00D3EE38 /* NumberCorrectView.swift in Sources */,
 				93F52379290186FE00D3EE38 /* ActivityItemModel.swift in Sources */,
+				64D6266E2910E4A300F28961 /* FinishMCDView.swift in Sources */,
+				64D626662910A8EF00F28961 /* ProgressBarDuo.swift in Sources */,
 				EE473B10290827570091134C /* MemoryGameView.swift in Sources */,
 				A4AC04C42900D2E000510EDA /* InitPopUpView.swift in Sources */,
 				937E8D59290ABFC50063F35B /* SoundButtonClass.swift in Sources */,
@@ -313,6 +346,9 @@
 				935F65AD2906BC6E002E045B /* WheresTheNumberView.swift in Sources */,
 				A4AC04C62900D9B900510EDA /* FinishSoloView.swift in Sources */,
 				A45A0D77290041AB0043D00A /* HapitcsModel.swift in Sources */,
+				64D6266C2910DF2000F28961 /* FinishDuoWheresTheNumberView.swift in Sources */,
+				64D6266229105DE900F28961 /* FinishSoloCountThereView.swift in Sources */,
+				64D6266A2910C44900F28961 /* FinishDuoCountThereView.swift in Sources */,
 				A4AC04C92901984C00510EDA /* playSound.swift in Sources */,
 				EE473B1429082A640091134C /* MemoryCardView.swift in Sources */,
 				93F52377290182E400D3EE38 /* GameButtonModel.swift in Sources */,
