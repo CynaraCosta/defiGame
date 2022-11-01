@@ -485,10 +485,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameMath/Preview Content\"";
-				DEVELOPMENT_TEAM = YR72926579;
+				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameMath/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Défis";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,10 +516,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameMath/Preview Content\"";
-				DEVELOPMENT_TEAM = YR72926579;
+				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameMath/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Défis";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

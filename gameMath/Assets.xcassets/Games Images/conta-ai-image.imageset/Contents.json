@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "conta-ai-image.png",
+      "filename" : "CONTA AI NESSE INFERNO.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "CONTA AI NESSE INFERNO@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "CONTA AI NESSE INFERNO@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
