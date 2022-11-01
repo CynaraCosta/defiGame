@@ -16,54 +16,106 @@ struct ContentView: View {
         //
     var body: some View {
         
-        NavigationView {
-            ZStack {
-                BackgroundView()
-                
-                Image("padronagem")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-
-                VStack(spacing: 111) {
-                    Text("Défis")
-                        .fixedSize(horizontal: false, vertical: true)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .frame(width: 240, height: 107)
-                        .font(.custom(FontsManager.Sacramento.regular, size: 100))
-                        .shadow(radius: 4)
-                        .foregroundColor(.white)
-
-                    VStack (spacing: 24) {
-                        NavigationLink(destination: SelectGameView()){
-                            Text("Solo")
-                                .foregroundColor(Color.black)
-                                .fixedSize(horizontal: false, vertical: true)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                                .frame(width: 240, height: 40)
-                                .background(Rectangle().fill(Color.white).shadow(radius: 3))
-                                .cornerRadius(50)
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                ZStack {
+                    BackgroundView()
+                    
+                    Image("padronagem")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                    
+                    VStack(spacing: 111) {
+                        Text("Défis")
+                            .fixedSize(horizontal: false, vertical: true)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .frame(width: 240, height: 107)
+                            .font(.custom(FontsManager.Sacramento.regular, size: 100))
+                            .shadow(radius: 4)
+                            .foregroundColor(.white)
+                        
+                        VStack (spacing: 24) {
+                            NavigationLink(destination: SelectGameView()){
+                                Text("Solo")
+                                    .foregroundColor(Color.black)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    .frame(width: 240, height: 40)
+                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                                    .cornerRadius(50)
+                            }
+                            
+                            NavigationLink(destination: SelectGameDuoView()){
+                                Text("Disputa")
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    .frame(width: 240, height: 40)
+                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                                    .cornerRadius(50)
+                            }.navigationBarTitle("")
+                                .navigationBarHidden(true)
+                                .navigationBarBackButtonHidden(true)
+                            
+                            
                         }
-
-                        NavigationLink(destination: SelectGameDuoView()){
-                            Text("Disputa")
-                                .fixedSize(horizontal: false, vertical: true)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                                .frame(width: 240, height: 40)
-                                .background(Rectangle().fill(Color.white).shadow(radius: 3))
-                                .cornerRadius(50)
-                        }.navigationBarTitle("")
-                            .navigationBarHidden(true)
-                            .navigationBarBackButtonHidden(true)
-                        
-                        
                     }
                 }
-            }
-        }.accentColor(Color.white)
+            }.accentColor(Color.white)
+        } else {
+            NavigationView {
+                ZStack {
+                    BackgroundView()
+            
+                    Image("padronagem")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+            
+                    VStack(spacing: 111) {
+                        Text("Défis")
+                            .fixedSize(horizontal: false, vertical: true)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .frame(width: 240, height: 107)
+                            .font(.custom(FontsManager.Sacramento.regular, size: 100))
+                            .shadow(radius: 4)
+                            .foregroundColor(.white)
+            
+                        VStack (spacing: 24) {
+                            NavigationLink(destination: SelectGameView()){
+                                Text("Solo")
+                                    .foregroundColor(Color.black)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    .frame(width: 240, height: 40)
+                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                                    .cornerRadius(50)
+                            }
+            
+                            NavigationLink(destination: SelectGameDuoView()){
+                                Text("Disputa")
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    .frame(width: 240, height: 40)
+                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                                    .cornerRadius(50)
+                            }.navigationBarTitle("")
+                                .navigationBarHidden(true)
+                                .navigationBarBackButtonHidden(true)
+            
+            
+                        }
+                    }
+                }
+            }.accentColor(Color.white)
+
+        }
  
     }
 }
@@ -85,3 +137,53 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+
+//
+//NavigationView {
+//    ZStack {
+//        BackgroundView()
+//
+//        Image("padronagem")
+//            .resizable()
+//            .aspectRatio(contentMode: .fill)
+//
+//        VStack(spacing: 111) {
+//            Text("Défis")
+//                .fixedSize(horizontal: false, vertical: true)
+//                .multilineTextAlignment(.center)
+//                .padding()
+//                .frame(width: 240, height: 107)
+//                .font(.custom(FontsManager.Sacramento.regular, size: 100))
+//                .shadow(radius: 4)
+//                .foregroundColor(.white)
+//
+//            VStack (spacing: 24) {
+//                NavigationLink(destination: SelectGameView()){
+//                    Text("Solo")
+//                        .foregroundColor(Color.black)
+//                        .fixedSize(horizontal: false, vertical: true)
+//                        .multilineTextAlignment(.center)
+//                        .padding()
+//                        .frame(width: 240, height: 40)
+//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+//                        .cornerRadius(50)
+//                }
+//
+//                NavigationLink(destination: SelectGameDuoView()){
+//                    Text("Disputa")
+//                        .fixedSize(horizontal: false, vertical: true)
+//                        .foregroundColor(Color.black)
+//                        .multilineTextAlignment(.center)
+//                        .padding()
+//                        .frame(width: 240, height: 40)
+//                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+//                        .cornerRadius(50)
+//                }.navigationBarTitle("")
+//                    .navigationBarHidden(true)
+//                    .navigationBarBackButtonHidden(true)
+//
+//
+//            }
+//        }
+//    }
+//}.accentColor(Color.white)

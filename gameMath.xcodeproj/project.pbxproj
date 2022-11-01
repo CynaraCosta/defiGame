@@ -81,7 +81,7 @@
 		93FD85A928F4449A00F9238E /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
 		A40B796A290962A60076F5AC /* FinishDuoPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDuoPopUp.swift; sourceTree = "<group>"; };
 		A40B796F290978170076F5AC /* Particles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particles.swift; sourceTree = "<group>"; };
-		A4378D1328EF922600DA2DA0 /* Défis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Défis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4378D1328EF922600DA2DA0 /* Defis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Defis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4378D1628EF922600DA2DA0 /* gameMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMathApp.swift; sourceTree = "<group>"; };
 		A4378D1828EF922600DA2DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4378D1A28EF922900DA2DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		A4378D1428EF922600DA2DA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4378D1328EF922600DA2DA0 /* Défis.app */,
+				A4378D1328EF922600DA2DA0 /* Defis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			packageProductDependencies = (
 			);
 			productName = gameMath;
-			productReference = A4378D1328EF922600DA2DA0 /* Défis.app */;
+			productReference = A4378D1328EF922600DA2DA0 /* Defis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -489,7 +489,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameMath/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Defis;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -501,7 +500,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gameMath;
-				PRODUCT_NAME = "Défis";
+				PRODUCT_NAME = Defis;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,7 +522,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gameMath/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Defis;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -532,7 +533,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gameMath;
-				PRODUCT_NAME = "Défis";
+				PRODUCT_NAME = Defis;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

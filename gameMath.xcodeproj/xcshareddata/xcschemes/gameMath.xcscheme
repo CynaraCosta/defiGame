@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4378D1228EF922600DA2DA0"
-               BuildableName = "De&#x301;fis.app"
+               BuildableName = "Defis.app"
                BlueprintName = "gameMath"
                ReferencedContainer = "container:gameMath.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4378D1228EF922600DA2DA0"
-            BuildableName = "De&#x301;fis.app"
+            BuildableName = "Defis.app"
             BlueprintName = "gameMath"
             ReferencedContainer = "container:gameMath.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4378D1228EF922600DA2DA0"
-            BuildableName = "De&#x301;fis.app"
+            BuildableName = "Defis.app"
             BlueprintName = "gameMath"
             ReferencedContainer = "container:gameMath.xcodeproj">
          </BuildableReference>
