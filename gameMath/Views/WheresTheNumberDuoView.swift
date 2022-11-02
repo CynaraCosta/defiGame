@@ -426,7 +426,7 @@ struct WheresTheNumberDuoView: View {
             }
             answer2 = Int.random(in: 1...100)
             while answer2 == answer1 || answer2 == answer3 {
-                answer3 = Int.random(in: 1...100)
+                answer2 = Int.random(in: 1...100)
             }
             answer4 = Int.random(in: 1...100)
             while answer4 == answer1 || answer4 == answer2 || answer4 == answer3 {
