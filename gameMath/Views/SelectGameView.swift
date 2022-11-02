@@ -137,7 +137,7 @@ struct BackgroundViewSelectGameView: View {
 struct SelectGameView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            if #available(iOS 16.0, *) {
+            if #available(iOS 16.1, *) {
                 NavigationStack {
                     SelectGameView()
                 }

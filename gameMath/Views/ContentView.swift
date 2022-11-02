@@ -16,7 +16,7 @@ struct ContentView: View {
         //
     var body: some View {
         
-        if #available(iOS 16.0, *) {
+        if #available(iOS 16.1, *) {
             NavigationStack {
                 ZStack {
                     BackgroundView()
@@ -47,16 +47,16 @@ struct ContentView: View {
                                     .cornerRadius(50)
                             }
                             
-                            NavigationLink(destination: SelectGameDuoView()){
-                                Text("Disputa")
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .foregroundColor(Color.black)
-                                    .multilineTextAlignment(.center)
-                                    .padding()
-                                    .frame(width: 240, height: 40)
-                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
-                                    .cornerRadius(50)
-                            }.navigationBarTitle("")
+//                            NavigationLink(destination: SelectGameDuoView()){
+//                                Text("Disputa")
+//                                    .fixedSize(horizontal: false, vertical: true)
+//                                    .foregroundColor(Color.black)
+//                                    .multilineTextAlignment(.center)
+//                                    .padding()
+//                                    .frame(width: 240, height: 40)
+//                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+//                                    .cornerRadius(50)
+//                            }.navigationBarTitle("")
                                 .navigationBarHidden(true)
                                 .navigationBarBackButtonHidden(true)
                             
@@ -96,16 +96,16 @@ struct ContentView: View {
                                     .cornerRadius(50)
                             }
             
-                            NavigationLink(destination: SelectGameDuoView()){
-                                Text("Disputa")
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .foregroundColor(Color.black)
-                                    .multilineTextAlignment(.center)
-                                    .padding()
-                                    .frame(width: 240, height: 40)
-                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
-                                    .cornerRadius(50)
-                            }.navigationBarTitle("")
+//                            NavigationLink(destination: SelectGameDuoView()){
+//                                Text("Disputa")
+//                                    .fixedSize(horizontal: false, vertical: true)
+//                                    .foregroundColor(Color.black)
+//                                    .multilineTextAlignment(.center)
+//                                    .padding()
+//                                    .frame(width: 240, height: 40)
+//                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+//                                    .cornerRadius(50)
+//                            }.navigationBarTitle("")
                                 .navigationBarHidden(true)
                                 .navigationBarBackButtonHidden(true)
             
