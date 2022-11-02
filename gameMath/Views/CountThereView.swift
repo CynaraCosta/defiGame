@@ -279,7 +279,7 @@ struct CountThereView: View {
             }
             answer2 = Int.random(in: minRange...maxRange)
             while answer2 == answer1 || answer2 == answer3 {
-                answer3 = Int.random(in: minRange...maxRange)
+                answer2 = Int.random(in: minRange...maxRange)
             }
             answer4 = Int.random(in: minRange...maxRange)
             while answer4 == answer1 || answer4 == answer2 || answer4 == answer3 {
