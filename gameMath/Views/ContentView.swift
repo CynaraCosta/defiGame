@@ -47,16 +47,16 @@ struct ContentView: View {
                                     .cornerRadius(50)
                             }
                             
-//                            NavigationLink(destination: SelectGameDuoView()){
-//                                Text("Disputa")
-//                                    .fixedSize(horizontal: false, vertical: true)
-//                                    .foregroundColor(Color.black)
-//                                    .multilineTextAlignment(.center)
-//                                    .padding()
-//                                    .frame(width: 240, height: 40)
-//                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
-//                                    .cornerRadius(50)
-//                            }.navigationBarTitle("")
+                            NavigationLink(destination: SelectGameDuoView()){
+                                Text("Disputa")
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    .frame(width: 240, height: 40)
+                                    .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                                    .cornerRadius(50)
+                            }.navigationBarTitle("")
                                 .navigationBarHidden(true)
                                 .navigationBarBackButtonHidden(true)
                             
