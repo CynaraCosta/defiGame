@@ -72,6 +72,7 @@ struct GameButtonView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                 
                     .multilineTextAlignment(.center)
+                    .foregroundColor(self.textColor)
                 
             }).buttonStyle(PlainButtonStyle())
         }
